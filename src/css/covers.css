@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.covers {
+    padding: 0;
+}
+
+.is_hidden {
+    display: none;
+}
+
+.content {
+    position: relative;
+}
+
+.marquee {
+    position: absolute;
+    right: -3500px;
+    left: 0;
+    overflow: hidden;
+}
+
+.marquee__inner {
+    /* height: 100vh; */
+    display: flex;
+    /* margin: 2%; */
+    transform: rotate(15deg);
+}
+
+.marquee__line {
+    flex-shrink: 0;
+    /* margin-right: 10px; */
+    margin: 0.6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 8);
+    white-space: nowrap;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-name: marqueeLine;
+}
+
+@keyframes marqueeLine {
+    from {
+        transform: translateX(-20%);
+    }
+    
+    to {
+        transform: translateX(-180%);
+    }
+}
