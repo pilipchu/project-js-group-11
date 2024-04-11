@@ -1,6 +1,7 @@
 // запит на сервер щоб отримати review
 
 import axios from "axios";
+import Swiper from "swiper";
 
  export async function getReviews() {
   try {
@@ -19,7 +20,7 @@ import axios from "axios";
   }
 }
 
-getReviews();
+//getReviews()
 
 // =========================
 // тут метод POST
@@ -41,19 +42,19 @@ export async function postReview(email, comment) {
 }
 
 // накидаю приклад для перевірки роботи, бо в мене все норм. Якщо треба буде зробити перевірку - розкоментуйте два консти нижче)
-// const email = "its-work@gmail.com";
-// const comment = "Все працює. Всі молодці";
+//const email = "its-work@gmail.com";
+//const comment = "Все працює. Всі молодці";
 
-postReview(email, comment)
-  .catch(error => {
-    console.error(error);
-  });
+// postReview(email, comment)
+//   .catch(error => {
+//     console.error(error);
+//   });
 
 
 // ===================================================
 // SWIPER
 
-import Swiper from "swiper";
+
 
 export function initSwiper(containerId, direction, loop = false) {
   return new Swiper(containerId, {
