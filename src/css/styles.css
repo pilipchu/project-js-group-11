@@ -6,6 +6,7 @@
 */
 @import url('./reset.css');
 @import url('./header.css');
+@import url('./work-together.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
