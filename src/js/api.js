@@ -22,7 +22,7 @@ import axios from "axios";
 getReviews();
 
 // =========================
-
+// тут метод POST
 
 export async function postReview(email, comment) {
   try {
@@ -48,3 +48,41 @@ postReview(email, comment)
   .catch(error => {
     console.error(error);
   });
+
+
+// ===================================================
+// SWIPER
+
+import Swiper from "swiper";
+
+export function initSwiper(containerId, direction, loop = false) {
+  return new Swiper(containerId, {
+    direction: direction,
+    loop: loop,
+    slidesPerView: 'auto',
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    keyboard: true,
+  });
+}
+
+
+// інструкція:
+// спочатку імпортуємо ф-цію в свій файл
+
+// import { initSwiper } from './swiperUtils.js';
+
+// ПОТІМ
+
+// додаємо таку штуку щоб ініціалізувати його у себе
+
+// const projectsSwiper = initSwiper('#ВАШ-АЙДІШНІК-ЯКИЙ-СТОЇТЬ-НА-ДІВІ', 'horizontal', true);
+
+// наприклад якщо це секція
+// reviews.js
+
+// const reviewsSwiper = initSwiper('#reviews-swiper', 'horizontal', true);
+
+// якось так має працювати.. з божою допомогою))))
