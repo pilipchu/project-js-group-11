@@ -4,17 +4,17 @@ import axios from "axios";
 import Swiper from "swiper";
 
 export async function getReviews() {
-  const url = "https://portfolio-js.b.goit.study/api/reviews";
+  const URL = "https://portfolio-js.b.goit.study/api/reviews";
 
-    const response = await axios.get (url);
+    const RESPONSE = await axios.get (URL);
 
-    if (response.status !== 200) {
+    if (RESPONSE.status !== 200) {
       throw new Error('Network response was not ok');
     }
 
-    const data = response.data;
+    const DATA = RESPONSE.data;
 
-    return data;
+    return DATA;
 }
 
 //getReviews()
@@ -23,16 +23,16 @@ export async function getReviews() {
 // тут метод POST
 
 export async function postReview(email, comment) {
-  const postUrl = "https://portfolio-js.b.goit.study/api/requests";
+  const POST_URL = "https://portfolio-js.b.goit.study/api/requests";
 
-    const response = await axios.post(postUrl, {
+    const POST_RESPONSE = await axios.post(POST_URL, {
       email: email,
       comment: comment
     });
 
-    const responseData = response.data;
-    // console.log(responseData); // теж розкоментуйте якщо треба глянути, що приходить
-    return responseData;
+    const RESPONSE_DATA = POST_RESPONSE.data;
+    // console.log(RESPONSE_DATA); // теж розкоментуйте якщо треба глянути, що приходить
+    return RESPONSE_DATA;
 
 }
 
@@ -73,11 +73,54 @@ export function initSwiper(containerId, direction, loop = false) {
 
 // додаємо таку штуку щоб ініціалізувати його у себе
 
-// const projectsSwiper = initSwiper('#ВАШ-АЙДІШНІК-ЯКИЙ-СТОЇТЬ-НА-ДІВІ', 'horizontal', true);
+// const PROJECTS_SWIPER = initSwiper('#ВАШ-АЙДІШНІК-ЯКИЙ-СТОЇТЬ-НА-ДІВІ', 'horizontal', true);
 
 // наприклад якщо це секція
 // reviews.js
 
-// const reviewsSwiper = initSwiper('#reviews-swiper', 'horizontal', true);
+// const REVIEWS_SWIPER = initSwiper('#reviews-swiper', 'horizontal', true);
 
 // якось так має працювати.. з божою допомогою))))
+// =================================
+
+
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
+
+export function createAccordion(defaultOpenIndex = 0) {
+
+  //  я шукаю контейнер акордиону по класу! Гляньте щоб у вас клас основний був .accordion-container,
+  //  а вже для індивідуальних стилів можете накинути ще один свій
+  const CONTAINER = document.querySelector(".accordion-container");
+
+//  на всякий випадок
+  if (!CONTAINER) {
+    console.error("Container not found");
+    return;
+  }
+
+const ITEMS = CONTAINER.querySelectorAll("li");
+new Accordion(CONTAINER, {});
+
+  ITEMS.forEach((item, index) => {
+    if (index === defaultOpenIndex) {
+      item.classList.add("active");
+    }
+  });
+
+}
+
+//  тепер треба зробити імпорт тепер треба зробити імпорт до себе і викликати функцію
+// тільки в секції about me треба передати в параметр 0, щоб перший елемент був відкритий.
+//  в іншій секції просто виклик функції і в дужках нічого не треба бо по замовчуванню 1й елемент закритий
+// Приклад:
+
+// import { createAccordion } from "./api";
+
+// createAccordion(0);
+// або
+// createAccordion();
+
+
+
+
