@@ -3,8 +3,6 @@
 import axios from "axios";
 import Swiper from "swiper";
 
-export async function getReviews() {
-  const url = "https://portfolio-js.b.goit.study/api/reviews";
 
     const response = await axios.get (url);
 
