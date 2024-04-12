@@ -81,3 +81,46 @@ export function initSwiper(containerId, direction, loop = false) {
 // const reviewsSwiper = initSwiper('#reviews-swiper', 'horizontal', true);
 
 // якось так має працювати.. з божою допомогою))))
+// =================================
+
+
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
+
+export function createAccordion(defaultOpenIndex = 0) {
+
+  //  я шукаю контейнер акордиону по класу! Гляньте щоб у вас клас основний був .accordion-container,
+  //  а вже для індивідуальних стилів можете накинути ще один свій
+  const container = document.querySelector(".accordion-container");
+
+//  на всякий випадок
+  if (!container) {
+    console.error("Container not found");
+    return;
+  }
+
+const items = container.querySelectorAll("li");
+new Accordion(container, {});
+
+  items.forEach((item, index) => {
+    if (index === defaultOpenIndex) {
+      item.classList.add("active");
+    }
+  });
+
+}
+
+//  тепер треба зробити імпорт тепер треба зробити імпорт до себе і викликати функцію
+// тільки в секції about me треба передати в параметр 0, щоб перший елемент був відкритий.
+//  в іншій секції просто виклик функції і в дужках нічого не треба бо по замовчуванню 1й елемент закритий
+// Приклад:
+
+// import { createAccordion } from "./api";
+
+// createAccordion(0);
+// або
+// createAccordion();
+
+
+
+
