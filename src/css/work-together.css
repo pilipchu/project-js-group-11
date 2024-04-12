@@ -1,0 +1,33 @@
+/*================== MOBILE WORK TOGETHER STYLES ============= */
+.work-together-section {
+    padding: 32px 0px;
+    margin: 0 auto;
+    background: #1c1d20; /*! видалити*/
+}
+.work-together-title {
+    font-family: "Inter Tight", sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #fafafa;
+}
+
+
+/*============== /MOBILE WORK TOGETHER STYLES ================ */
+
+/*============== TABLET WORK TOGETHER STYLES ================= */
+@media screen and (min-width: 768px) {
+    
+}
+
+/*============== /TABLET WORK TOGETHER STYLES ================= */
+
+/*============== DESKTOP WORK TOGETHER STYLES ================= */
+@media screen and (min-width: 1440px) {
+    
+}
+
+/*============== /DESKTOP WORK TOGETHER STYLES ================ */
+
