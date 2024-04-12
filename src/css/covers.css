@@ -8,53 +8,106 @@ body {
     box-sizing: border-box;
 }
 
-.covers {
-    padding: 0;
-}
-
 .is_hidden {
     display: none;
 }
 
-.content {
-    position: relative;
+.under {
+    background-image: url(../img/covers/three-red-stains.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.marquee {
-    position: absolute;
-    right: -3500px;
-    left: 0;
-    overflow: hidden;
-}
+/* 
+//MОБІЛЬНА ВЕРСІЯ */
 
-.marquee__inner {
-    /* height: 100vh; */
-    display: flex;
-    /* margin: 2%; */
-    transform: rotate(15deg);
-}
+@media only screen and (min-width: 320px) {
 
-.marquee__line {
-    flex-shrink: 0;
-    /* margin-right: 10px; */
-    margin: 0.6%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: calc(100% / 8);
-    white-space: nowrap;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-name: marqueeLine;
-}
+    .covers {
+        padding: 0;
+        width: 508px;
+        height: 375px;
 
-@keyframes marqueeLine {
-    from {
-        transform: translateX(-20%);
     }
     
-    to {
-        transform: translateX(-180%);
+    .content {
+        position: relative;
+    }
+    
+    .marquee {
+        position: absolute;
+        right: -500px;
+        left: 0;
+        overflow: hidden;
+    }
+    
+    .marquee__inner {
+        height: 20vh;
+        display: flex;
+        transform: rotate(15deg);
+    }
+    
+    .marquee__line {
+        flex-shrink: 0;
+        margin: 0.6%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% / 10);
+        white-space: nowrap;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-name: marqueeLine;
+        width: 282px;
+        height: 162px;
+    }
+    
+    @keyframes marqueeLine {
+        from {
+            transform: translateX(-20%);
+        }
+        
+        to {
+            transform: translateX(-180%);
+        }
+    }
+    
+}
+    
+/* ВЕРСІЯ ДЛЯ ПЛАНШЕТУ */
+@media (min-width: 768px) {
+    
+    .covers {
+        padding: 0;
+        width: 768px;
+        height: 960px;
+    
+    }
+
+    .content {
+        position: relative;
+    }
+
+
+}
+    
+/* ДЕСКТОПНА ВЕРСІЯ */
+@media (min-width: 1440px) {
+
+    .covers {
+        padding: 0;
+        width: 508px;
+        height: 375px;
+    
+    }
+    
+    .content {
+        position: relative;
     }
 }
