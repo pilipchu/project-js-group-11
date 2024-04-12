@@ -25,7 +25,6 @@
 
 .work-together-title {
     color: #fafafa;
-    font-family: Inter Tight;
     font-size: 40px;
     font-weight: 500;
     line-height: 1;
@@ -36,7 +35,6 @@
 
 .work-together-span {
     color: #ed3b44;
-    font-family: Inter Tight;
     font-size: 40px;
     font-weight: 500;
     line-height: 1;
@@ -106,6 +104,105 @@
 /*============== /MOBILE WORK TOGETHER STYLES ================ */
 
 
+/*============== TABLET WORK TOGETHER STYLES ================= */
+@media screen and (min-width: 768px) {
+.work-together-section {
+    padding-top: 80px;
+    padding-bottom: 169px;
+}
+
+.work-together-title {
+    font-size: 64px;     
+    margin-bottom: 18px;
+    text-indent: 90px;
+}
+
+.work-together-span {
+    font-size: 64px;
+}
+
+.work-together-foto {
+    top: 85px;
+    left: 32px;
+    width: 70px;
+    height: 70px;
+}
+
+.work-together-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.work-together-form input {
+    width: 245px;       
+}
+
+#work-together-input-email {
+    margin-bottom: 0;
+    margin-top: 46px;
+}
+
+#work-together-input-text {
+    margin-bottom: 0;
+    margin-top: 46px;
+}
+
+.work-together-btn {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 0;
+    padding: 0px;
+}
+
+.work-together-contacts-list {
+    gap: 8px;
+}
+
+.work-together-contacts-mail-link,
+.work-together-contacts-phone-link {
+    font-size: 16px;
+    padding: 18px 32px;
+    
+}             
+}
+
+/*============== /TABLET WORK TOGETHER STYLES ================= */
+
+
+/*============== DESKTOP WORK TOGETHER STYLES ================= */
+@media screen and (min-width: 1440px) {
+.work-together-container {
+    max-width: 1048px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-together-foto {
+    top: 85px;
+    left: 196px;
+}
+
+.work-together-form-group {
+    margin-right: 32px;
+}
+
+.work-together-form-group:nth-last-child(2) {
+    margin-right: 86px;
+}
+
+.work-together-form {
+    margin-bottom: 18px;
+}
+
+.work-together-form input {
+    width: 390px;
+}
+}
+
+/*============== /DESKTOP WORK TOGETHER STYLES ================ */
+
+
 /*================== MOBILE WORK TOGETHER MODAL WINDOW STYLES ============= */
 .work-together-modal-window {
     position: absolute;
@@ -152,46 +249,3 @@
 }
 
 /*================== /MOBILE WORK TOGETHER MODAL WINDOW STYLES ============= */
-
-
-/*============== TABLET WORK TOGETHER STYLES ================= */
-@media screen and (min-width: 768px) {
-.work-together-section {
-    padding-top: 88px;
-}
-
-.work-together-title {
-    font-size: 64px;     
-    margin-bottom: 64px;
-    text-indent: 90px;
-}
-
-.work-together-span {
-    font-size: 64px;
-}
-
-.work-together-foto {
-    top: 85px;
-    left: 32px;
-    width: 70px;
-    height: 70px;
-}
-
-.work-together-form {
-    display: flex;
-    gap:32px;
-}
-                
-              
-                
-}
-
-/*============== /TABLET WORK TOGETHER STYLES ================= */
-
-/*============== DESKTOP WORK TOGETHER STYLES ================= */
-@media screen and (min-width: 1440px) {
-    
-}
-
-/*============== /DESKTOP WORK TOGETHER STYLES ================ */
-
