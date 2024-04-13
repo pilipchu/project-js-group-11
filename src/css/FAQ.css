@@ -3,6 +3,11 @@
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.faq-item {
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
+  background-color: transparent;
+}
 .fqa-title {
   color: rgba(250, 250, 250, 0.4);
   font-family: 'Inter Tight';
@@ -29,8 +34,9 @@
   width: calc(100% - 34px);
 }
 .faq-icon {
-  fill: #fafafa;
-  /* border-radius: 1px solid #fafafa33; */
+  border-radius: 50%;
+  border-color: rgba(250, 250, 250, 0.2);
+  border: 1px solid #fafafa33;
   display: block;
   width: 34px;
   height: 34px;
@@ -46,21 +52,100 @@
   width: 100%;
   display: flex;
 }
+
+.faq-item-text-container {
+  margin-bottom: 20px;
+}
+
 .faq-item-text {
-  color: #fafafa99;
+  color: rgba(250, 250, 250, 0.6);
+  font-family: 'Inter Tight';
   font-size: 16px;
+  font-style: normal;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.32px;
   text-align: left;
 }
 
+.faq-list {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  background-color: transparent;
+}
+
+/* ======= TABLET FAQ ======= */
+/* ======= TABLET FAQ ======= */
 @media screen and (min-width: 768px) {
-  .container {
+  .fqa-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .faq-item-title {
+    margin-top: 32px;
+    margin-bottom: 26px;
+    width: calc(100% - 90px);
+  }
+  .faq-icon {
+    width: 40px;
+    height: 40px;
+    margin: 32px 0px 0px 0px;
+  }
+
+  .faq-btn-conteiner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .faq-item-text-container {
+    width: calc(100% - 48px);
+    margin-bottom: 24px;
+  }
+
+  .faq-item-text {
+    width: calc(100% - 48px);
   }
 }
 
+/* ======= DESKTOP FAQ ======= */
+/* ======= DESKTOP FAQ ======= */
+
 @media screen and (min-width: 1440px) {
-  .container {
+  .fqa-section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .faq-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+  }
+
+  .faq-item {
+    width: 50%;
+  }
+
+  .faq-item-title {
+    width: calc(100% - 8px);
+  }
+  .faq-icon {
+    margin: 32px 32px 0px 0px;
+  }
+
+  .faq-btn-conteiner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .faq-item-text-container {
+    width: calc(100% - 48px);
+    margin-bottom: 24px;
+  }
+
+  .faq-item-text {
+    width: calc(100% - 48px);
   }
 }
