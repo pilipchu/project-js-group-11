@@ -48,7 +48,7 @@
   margin: 20px 0px 16px;
 
   /* new */
-  /* transition: transform 0.5s ease-in; */
+  transition: transform 0.5s ease-in;
 }
 
 #icon-Arrow-down:active path:first-child {
@@ -68,16 +68,16 @@
   /* new */
   max-height: 0;
   overflow: hidden;
-  /* transition: max-height 1.4s ease; */
+  transition: max-height 1.4s ease;
 }
 /* new */
 .faq-item.active .faq-answer-container {
   max-height: 200px;
 }
 
-/* .faq-item.active svg {
+.faq-item.active svg {
   transform: rotate(180deg);
-} */
+}
 
 .faq-item-text {
   color: rgba(250, 250, 250, 0.6);
@@ -97,7 +97,7 @@
 
 /* new */
 
-/* @keyframes fade {
+@keyframes fade {
   form {
     opacity: 0;
     transform: translateY(-10px);
@@ -106,7 +106,7 @@
     opacity: 1;
     transform: translateY(0);
   }
-} */
+}
 /* ========= */
 
 /* ======= TABLET FAQ ======= */
