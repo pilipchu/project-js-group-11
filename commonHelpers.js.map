@@ -1,1 +1,1 @@
-{"version":3,"file":"commonHelpers.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"commonHelpers.js","sources":["../src/js/about-me.js"],"sourcesContent":["import Accordion from 'accordion-js';\nimport 'accordion-js/dist/accordion.min.css';\n\nconst according = document.querySelector('.list-about-me');\n\nnew Accordion(according);"],"names":["according","Accordion"],"mappings":"svBAGA,MAAMA,EAAY,SAAS,cAAc,gBAAgB,EAEzD,IAAIC,EAAUD,CAAS"}
