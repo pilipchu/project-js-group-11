@@ -6,16 +6,23 @@
   z-index: 1000;
   background-color: rgba(255, 255, 255, 0.8);
 }
-
+.header-section {
+  margin-top: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
 .fake-btn {
   display: flex;
+  padding: 18px 24px;
   justify-content: center;
   align-items: center;
-  padding: 18px;
   gap: 10px;
   border-radius: 60px;
   background: #ed3b44;
-  width: 163px;
+  height: 18px;
 }
 .fake-btn-text {
   color: #fafafa;
