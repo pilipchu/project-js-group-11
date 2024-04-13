@@ -1,0 +1,35 @@
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.fake-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  gap: 10px;
+  border-radius: 60px;
+  background: #ed3b44;
+  width: 163px;
+}
+.fake-btn-text {
+  color: #fafafa;
+
+  font-family: 'Inter Tight';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
