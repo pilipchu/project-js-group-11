@@ -1,4 +1,6 @@
-#header {
+/* ========== DESKTOP ========= */
+
+.header {
   position: absolute;
   top: 0;
   left: 0;
@@ -40,3 +42,11 @@
   align-items: flex-start;
   gap: 8px;
 }
+
+/* ========== DESKTOP ========= */
+
+/* ========== TABLET ========= */
+/* ========== TABLET ========= */
+
+/* ========== MOBILE ========= */
+/* ========== MOBILE ========= */
