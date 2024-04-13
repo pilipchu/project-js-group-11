@@ -11,59 +11,68 @@
       <p class="proj-slogan">
         Programming Across Borders: Ideas, Technologies, Innovations
       </p>
-      <button class="see-proj-btn" type="button">
-        <a
-          href="https://github.com/pilipchu/project-js-group-11"
-          target="_blank"
-        ></a
-        >See project
-      </button>
+      <a
+        class="github-link"
+        href="https://github.com/pilipchu/project-js-group-11"
+        target="_blank"
+        ><button class="see-proj-btn" type="button">See project</button></a
+      >
     </div>
-    <ul class="visual-content">
-      <li>
-        <img
-          src="../img/projects/projects-mob.jpeg"
-          srcset="
-            ../img/projects/projects-tab@2x.jpeg 2x,
-            ../img/projects/projects-tab@3x.jpeg 3x
-          "
-          class="proj-screenshot"
-          alt="library app screenshots"
-        />
-      </li>
-      <li>
-        <img
-          src="../img/projects/projects-mob-2.jpeg"
-          srcset="
-            ../img/projects/projects-tab-2@2x.jpeg 2x,
-            ../img/projects/projects-tab-2@3x.jpeg 3x
-          "
-          class="proj-screenshot"
-          alt="petlove app vet checking up dog's ear"
-        />
-      </li>
-      <li>
-        <img
-          src="../img/projects/projects-mob-3.jpeg"
-          srcset="
-            ../img/projects/projects-tab-3@2x.jpeg 2x,
-            ../img/projects/projects-tab-3@3x.jpeg 3x
-          "
-          class="proj-screenshot"
-          alt="vocabBuilder language learning app"
-        />
-      </li>
-    </ul>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <ul class="visual-content">
+          <li>
+            <div class="swiper-slide">
+              <img
+                src="./img/projects/projects-mob.jpeg"
+                srcset="
+                  ./img/projects/projects-tab@2x.jpeg 2x,
+                  ./img/projects/projects-tab@3x.jpeg 3x
+                "
+                class="proj-screenshot"
+                alt="library app screenshots"
+              />
+            </div>
+          </li>
+          <li>
+            <div class="swiper-slide">
+              <img
+                src="./img/projects/projects-mob-2.jpeg"
+                srcset="
+                  ./img/projects/projects-tab-2@2x.jpeg 2x,
+                  ./img/projects/projects-tab-2@3x.jpeg 3x
+                "
+                class="proj-screenshot"
+                alt="petlove app vet checking up dog's ear"
+              />
+            </div>
+          </li>
+          <li>
+            <div class="swiper-slide">
+              <img
+                src="./img/projects/projects-mob-3.jpeg"
+                srcset="
+                  ./img/projects/projects-tab-3@2x.jpeg 2x,
+                  ./img/projects/projects-tab-3@3x.jpeg 3x
+                "
+                class="proj-screenshot"
+                alt="vocabBuilder language learning app"
+              />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
   <div class="swiper-control-wrapper">
-    <button class="swipe-back-btn" type="button">
+    <button class="swipe-back-btn swiper-button-prev" type="button">
       <svg class="arrow-back-icon" width="24" height="24">
-        <use href="../img/sprite.svg.svg#icon-arrow-left"></use>
+        <use href="./img/sprite.svg.svg#icon-arrow-left"></use>
       </svg>
     </button>
-    <button class="swipe-forward-btn" type="button">
+    <button class="swipe-forward-btn swiper-button-next" type="button">
       <svg class="arrow-forward-icon" width="24" height="24">
-        <use href="../img/sprite.svg.svg#icon-arrow-right"></use>
+        <use href="./img/sprite.svg.svg#icon-arrow-right"></use>
       </svg>
     </button>
   </div>
