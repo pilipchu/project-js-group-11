@@ -26,11 +26,9 @@
 </symbol>
 <symbol id="icon-Arrow-up" viewBox="0 0 32 32">
 <path fill="#fafafa" d="M19.269 18.438l-3.81-3.81 0.541-0.533 0.533 0.533-3.81 3.81-1.074-1.074 4.35-4.35 4.343 4.35-1.074 1.074z"></path>
-<path fill="none" stroke="#fafafa"  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7619" d="M16 30.857c8.626 0 15.619-6.993 15.619-15.619s-6.993-15.619-15.619-15.619c-8.626 0-15.619 6.993-15.619 15.619s6.993 15.619 15.619 15.619z"></path>
 </symbol>
 <symbol id="icon-Arrow-down" viewBox="0 0 32 32">
 <path fill="#fafafa"  d="M19.269 13.554l-3.81 3.81 0.541 0.541 0.533-0.541-3.81-3.81-1.074 1.074 4.35 4.35 4.343-4.35-1.074-1.074z"></path>
-<path fill="none" stroke="#fafafa"  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7619" d="M16 0.381c8.626 0 15.619 6.993 15.619 15.619s-6.993 15.619-15.619 15.619c-8.626 0-15.619-6.993-15.619-15.619s6.993-15.619 15.619-15.619z"></path>
 </symbol>
 <symbol id="icon-jefferson" viewBox="0 0 141 32">
 <path fill="#FAFAFA" style="fill: var(--color1, #FAFAFA)" d="M133.406 15.158l0.236-4.952-4.312 2.695-1.331-2.223 4.564-2.257-4.564-2.24 1.331-2.257 4.312 2.695-0.236-4.935h2.644l-0.236 4.935 4.312-2.695 1.347 2.257-4.581 2.24 4.581 2.257-1.347 2.223-4.312-2.695 0.236 4.952h-2.644z"></path>
