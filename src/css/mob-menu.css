@@ -26,6 +26,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     height: 100%;
     padding-top: 32px;
     padding-bottom: 40px;
@@ -33,6 +35,7 @@
 .mobile-menu-close-btn {
     position: absolute;
     right: 16px;
+    top:32px;
     width: 28px;
     height: 28px;
     background-color: transparent;
@@ -46,7 +49,6 @@
 .mobile-menu-nav {
     position: absolute;
     top:45%;
-    left: 43%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,4 +64,26 @@ color: rgb(250, 250, 250);
     letter-spacing: 0.03em;
     text-align: left;
     text-decoration-line: underline;
+}
+.mob-menu-btn{
+    display: flex;
+    width: 164px;
+    padding: 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 60px;
+    background: #ED3B44;
+    color: #FAFAFA;
+    font-family: "Inter Tight";
+    font-size: 14px;
+}
+.mob-menu-btn:hover,
+.mob-menu-btn:focus{
+    background-color: #E0373F;
+}
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
 }
