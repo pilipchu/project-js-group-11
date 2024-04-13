@@ -44,5 +44,15 @@
 <path fill="#FAFAFA" style="fill: var(--color1, #FAFAFA)" d="M17.28 25.263c-1.819 0-3.385-0.387-4.716-1.145-1.347-0.758-2.358-1.836-3.082-3.217-0.707-1.381-1.061-2.998-1.061-4.851 0-1.836 0.337-3.469 1.044-4.867s1.701-2.493 2.981-3.267c1.28-0.792 2.796-1.179 4.514-1.179 1.061 0 2.088 0.152 3.065 0.488 0.994 0.337 1.886 0.859 2.661 1.566 0.792 0.724 1.415 1.651 1.869 2.796 0.472 1.145 0.707 2.526 0.707 4.143v1.246h-14.804v-2.611h12.935l-1.684 0.859c0-1.095-0.185-2.072-0.539-2.914s-0.876-1.499-1.583-1.971c-0.707-0.488-1.583-0.724-2.627-0.724s-1.937 0.236-2.678 0.724c-0.724 0.472-1.28 1.112-1.667 1.903-0.404 0.792-0.589 1.667-0.589 2.594v1.785c0 1.229 0.219 2.274 0.657 3.133 0.455 0.859 1.061 1.499 1.853 1.954 0.808 0.455 1.735 0.674 2.779 0.674 0.691 0 1.314-0.101 1.869-0.286 0.556-0.202 1.044-0.488 1.465-0.876 0.404-0.371 0.724-0.859 0.926-1.415l3.436 0.623c-0.286 0.96-0.775 1.802-1.465 2.526-0.707 0.724-1.583 1.297-2.644 1.701s-2.257 0.606-3.621 0.606z"></path>
 <path fill="#FAFAFA" style="fill: var(--color1, #FAFAFA)" d="M2.863 7.006h3.419v19.368c0.017 1.213-0.202 2.24-0.623 3.082-0.438 0.825-1.078 1.465-1.903 1.886-0.825 0.438-1.853 0.657-3.065 0.657h-0.691v-3.048h0.539c0.825 0 1.415-0.219 1.785-0.674 0.354-0.438 0.539-1.078 0.539-1.92v-19.352zM4.564 4.211c-0.606 0-1.112-0.219-1.533-0.623s-0.64-0.909-0.64-1.482c0-0.589 0.219-1.078 0.64-1.499 0.421-0.404 0.926-0.606 1.533-0.606 0.589 0 1.095 0.202 1.516 0.606 0.438 0.421 0.657 0.909 0.657 1.499 0 0.573-0.219 1.078-0.657 1.482-0.421 0.404-0.926 0.623-1.516 0.623z"></path>
 </symbol>
+<symbol id="icon-close-btn" viewBox="0 0 32 32">
+<path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M24 8l-16 16"></path>
+<path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M8 8l16 16"></path>
+</symbol>
+<symbol id="icon-close-dtn-mob-menu" viewBox="0 0 32 32">
+<path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M8 8h16"></path>
+</symbol>
+<symbol id="icon-mob-menu" viewBox="0 0 32 32">
+<path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M4 11.326h24M4 20.663h24"></path>
+</symbol>
 </defs>
 </svg>
