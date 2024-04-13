@@ -1,3 +1,9 @@
+.hero-section {
+  width: 1440px;
+  height: 900px;
+  flex-shrink: 0;
+}
+
 .hero-title {
   color: #fafafa;
 
@@ -7,11 +13,10 @@
   font-size: 90px;
   font-style: normal;
   font-weight: 500;
-  line-height: 90px; /* 100% */
+  line-height: 90px;
   letter-spacing: -2.7px;
   text-transform: uppercase;
   position: absolute;
-  top: 0;
   padding-left: 178px;
   padding-top: 270px;
 }
@@ -22,13 +27,13 @@
 
 .circle-link {
   display: flex;
-  padding: 18px 20px;
+  padding: 18px 18px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 60px;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  width: 20px;
+  width: 18px;
   height: 18px;
 }
 
@@ -52,7 +57,7 @@
   border-radius: 60px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   width: 223px;
-  height: 55px;
+  height: 36px;
 }
 
 .text-email {
@@ -64,4 +69,9 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.32px;
+}
+
+.all-links {
+  display: flex;
+  position: absolute;
 }
