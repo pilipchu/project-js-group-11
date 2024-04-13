@@ -5,13 +5,13 @@
     box-sizing: border-box;
 } /*! видалити*/
 
-.work-together-section {
+#work-together-section {
     background: #1c1d20; /*! видалити*/
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.work-together-section {
+#work-together-section {
     position: relative;
 }
 
@@ -106,7 +106,7 @@
 
 /*============== TABLET WORK TOGETHER STYLES ================= */
 @media screen and (min-width: 768px) {
-.work-together-section {
+#work-together-section {
     padding-top: 80px;
     padding-bottom: 169px;
 }
