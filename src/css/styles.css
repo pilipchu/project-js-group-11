@@ -5,14 +5,18 @@
   |============================
 */
 @import url('./reset.css');
+
+@import url('./header.css');
+@import url('./covers.css');
 @import url('./base.css');
 @import url('./benefits.css');
-@import url('./covers.css');
 @import url('./FAQ.css');
 @import url('./projects.css');
 @import url('./reviews.css');
 @import url('./work-together.css');
 @import url('./about-me.css');
+
+
 
 
 :root {

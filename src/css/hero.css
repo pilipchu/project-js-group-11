@@ -1,28 +1,26 @@
 .hero-section {
-  width: 1440px;
-  height: 900px;
-  flex-shrink: 0;
+  background: linear-gradient(
+    90deg,
+    #1c1d20 49.69%,
+    #69292d 67.71%,
+    #ed3b44 99.91%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
 }
-
 .hero-title {
   color: #fafafa;
-
   font-family: 'Inter Tight';
-  width: 1084px;
-  height: 270px;
   font-size: 90px;
   font-style: normal;
   font-weight: 500;
   line-height: 90px;
   letter-spacing: -2.7px;
   text-transform: uppercase;
-  position: absolute;
-  padding-left: 178px;
-  padding-top: 270px;
-}
-
-.title-png {
-  position: relative;
 }
 
 .circle-link {
@@ -73,5 +71,8 @@
 
 .all-links {
   display: flex;
-  position: absolute;
+  right: 32px;
+  bottom: 32px;
+}
+.img-desc {
 }
