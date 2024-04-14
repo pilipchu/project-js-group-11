@@ -22,21 +22,21 @@ const swiper = new Swiper(swiperAboutMe, {
   direction: 'horizontal',
   spaceBetween: 0,
   navigation: {
-      nextEl: '.swiper-button-next',
+      nextEl: buttonEl,
       prevEl: '.swiper-button-prev',
   },
   slidesPerView: 2,
   initialSlide: 1,
   updateOnWindowResize: true,
     breakpoints: {
-        319: {
-        slidesPerView:2,
+        375: {
+            slidesPerView: 2,
     },
     767: {
       slidesPerView: 3,
     },
     1440: {
-      slidesPerView: 6,
+      slidesPerView: 5,
     },
   },
   mousewheel: {
