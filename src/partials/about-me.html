@@ -1,9 +1,56 @@
 <section class="about-me-sec">
+  <ul class="about-me-hero">
+    <li class="about-me-hero-item">
+      <p class="a-m-hero-text">
+        I work with people all over the world to create impressive and
+        <span class="paint-func">functional</span>
+        <span class="paint-web">websites</span> that reflect each client's
+        unique personality.
+      </p>
+    </li>
+    <li class="about-me-hero-item">
+      <picture>
+        <source
+          srcset="
+            ../img/about-me/about-me-mob.jpeg    1x,
+            ../img/about-me/about-me-mob@2x.jpeg 2x,
+            ../img/about-me/about-me-mob@3x.jpeg 3x
+          "
+          media="(max-width:767px)"
+        />
+        <source
+          srcset="
+            ../img/about-me/about-me-desc.jpeg    1x,
+            ../img/about-me/about-me-desc@2x.jpeg 2x,
+            ../img/about-me/about-me-desc@3x.jpeg 3x
+          "
+          media="(min-width:1440px)"
+        />
+        <source
+          srcset="
+            ../img/about-me/about-me-tab.jpeg    1x,
+            ../img/about-me/about-me-tab@2x.jpeg 2x,
+            ../img/about-me/about-me-tab@3x.jpeg 3x
+          "
+          media="(min-width:768px)"
+        />
+
+        <img
+          class="img-about-me"
+          src="../img/about-me/about-me-mob.jpeg"
+          alt=""
+        />
+      </picture>
+    </li>
+  </ul>
   <ul class="list-about-me">
     <li id="item-about-me-collapse" class="ac">
       <h3 id="header-abou-me" class="ac-header">
         <button id="btn-about-me-collapse" type="button" class="ac-trigger">
-          About me
+          <p>About me</p>
+          <svg class="about-me-icon" width="34" height="34">
+            <use href="../img/sprite.svg.svg#icon-Arrow-down"></use>
+          </svg>
         </button>
       </h3>
       <div id="list-item-about-me" class="ac-panel">
@@ -30,7 +77,10 @@
     <li id="item-about-me-collapse" class="ac">
       <h3 id="header-abou-me" class="ac-header">
         <button id="btn-about-me-collapse" type="button" class="ac-trigger">
-          Role
+          <p>Role</p>
+          <svg class="about-me-icon" width="34" height="34">
+            <use href="../img/sprite.svg.svg#icon-Arrow-down"></use>
+          </svg>
         </button>
       </h3>
       <ul id="list-item-about-me" class="ac-panel">
@@ -48,7 +98,10 @@
     <li id="item-about-me-collapse" class="ac">
       <h3 id="header-abou-me" class="ac-header">
         <button id="btn-about-me-collapse" type="button" class="ac-trigger">
-          Education
+          <p>Education</p>
+          <svg class="about-me-icon" width="34" height="34">
+            <use href="../img/sprite.svg.svg#icon-Arrow-down"></use>
+          </svg>
         </button>
       </h3>
       <ul id="list-item-about-me" class="ac-panel">
@@ -71,13 +124,26 @@
       </ul>
     </li>
   </ul>
+  <!-- <div id="carousel-about-me-list" class="swiper">
+    <div class="carousel-about-me-list swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
 
-  <ul>
-    <li class="carousel"></li>
-    <li class="carousel"></li>
-    <li class="carousel"></li>
-    <li class="carousel"></li>
-    <li class="carousel"></li>
-    <li class="carousel"></li>
-  </ul>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div> -->
+  <!-- <div id="carousel-about-me-list" class="swiper">
+    <ul class="swiper-wrapper">
+      <li class="carousel-about-me-item swiper-slide">HTML/CSS</li>
+      <li class="carousel-about-me-item swiper-slide">JavaScript</li>
+      <li class="carousel-about-me-item swiper-slide">React</li>
+      <li class="carousel-about-me-item swiper-slide">Node.js</li>
+      <li class="carousel-about-me-item swiper-slide">React Native</li>
+      <li class="carousel-about-me-item swiper-slide">Soft skills</li>
+    </ul>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div> -->
 </section>
