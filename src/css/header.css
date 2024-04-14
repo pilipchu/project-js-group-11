@@ -1,0 +1,51 @@
+/* ========== DESKTOP ========= */
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.header-section {
+  margin-top: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.fake-btn {
+  display: flex;
+  padding: 18px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 60px;
+  background: #ed3b44;
+  height: 18px;
+}
+.fake-btn-text {
+  color: #fafafa;
+
+  font-family: 'Inter Tight';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* ========== DESKTOP ========= */
+
+/* ========== TABLET ========= */
+/* ========== TABLET ========= */
+
+/* ========== MOBILE ========= */
+/* ========== MOBILE ========= */

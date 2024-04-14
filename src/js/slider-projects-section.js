@@ -35,3 +35,8 @@ const swiper = new Swiper('#proj-swiper', {
  
 });
 
+
+const nextBtn = document.querySelector(".swiper-button-next");
+nextBtn.addEventListener("click", () => swiper.slideNext());
+
+
