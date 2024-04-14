@@ -240,7 +240,7 @@
     visibility: hidden;
     opacity: 0;
     transition: opacity .4s, visibility .4s;
-    background-image: url(./img/work-together/work-together-background.png);
+    background-image: url(./img/work-together/Background-mob.png);
     
 }
 
