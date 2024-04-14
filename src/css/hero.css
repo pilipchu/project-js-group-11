@@ -1,5 +1,6 @@
 /* ====================MOB================== */
 .hero-section {
+
     margin: 0 auto;
       background-image: url(/img/hero/Hero-mob.png);
       background-repeat: no-repeat;
@@ -25,6 +26,29 @@
     font-weight: 500;
     line-height: 50px;
     text-transform: uppercase;
+
+  background: linear-gradient(
+    90deg,
+    #1c1d20 49.69%,
+    #69292d 67.71%,
+    #ed3b44 99.91%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.hero-title {
+  color: #fafafa;
+  font-family: 'Inter Tight';
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90px;
+  letter-spacing: -2.7px;
+  text-transform: uppercase;
 }
 
 .all-links{
@@ -87,21 +111,7 @@
   line-height: 90px;
   width: 700px;
 }
-.all-links {
-  top: 77%;
-  right:33px;
-  gap: 8px;
-}
 
-.circle-link {
-  width: 55px;
-  height: 55px;
-}
-
-.text-link {
-  font-size: 16px;
-  line-height: 19px;
-}
 
 .circle-email {
   width: 223px;

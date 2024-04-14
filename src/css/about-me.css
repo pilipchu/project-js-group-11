@@ -1,10 +1,56 @@
 .about-me-sec{
-    padding: 16px;
+    padding: 32px 16px;
     background-color: #1C1D20;
 
 }
 
+.carousel-about-me-list{
+    width: 200px;
+}
+/* ------------ About me ------------ */
+.about-me-hero{
+    margin-bottom: 32px;
+}
+
+.about-me-hero-item{
+    border-radius: 24px;
+    background-color: #242527;
+}
+.about-me-hero-item:first-child{
+    padding: 32px 32px 272px 32px;
+    margin-bottom: 16px;
+}
+.about-me-hero-item{
+    border-radius: 24px;
+    background-color: #242527;
+}
+
+
+.img-about-me{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 24px;
+}
+.a-m-hero-text{
+    font-family: "Inter Tight";
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.paint-func{
+    color: #ED3B44;
+}
+.paint-web{
+    color: #FAFAFA66;
+    
+}
+/* ------------ About me ------------ */
+/* -----------accordion---------- */
 .list-about-me{
+    margin-bottom: 32px;
     list-style-type: none;
 }
 
@@ -26,31 +72,54 @@
 
 #item-about-me-collapse{
     margin-top: 32px;
+    padding-bottom: 30px;
     border-bottom: #8a8a8a 1px;
     background-color: #1C1D20;
     border-style: none none solid none;
 }
 
 #btn-about-me-collapse{
+    display: flex;
+        justify-content: space-between;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
     padding: 0;
-    padding-bottom: 32px;
     color: #8a8a8a;
     text-transform: uppercase;
 }
 
 #btn-about-me-collapse::after{
-    top: 25%;
+   display: none;
 }
-.ac.is-active .ac-panel {
-    padding-bottom: 30px;
+
+.about-me-icon{
+    border-radius: 50%;
+        border-color: rgba(250, 250, 250, 0.2);
+        border: 1px solid #fafafa33;
+        display: block;
+        width: 34px;
+        height: 34px;
+    
+        /* new */
+        transition: transform 0.5s ease-in;
+    
+}
+
+#icon-Arrow-down:active  {
+    fill: none;
+    stroke: #fafafa33;
+}
+
+#item-about-me-collapse.is-active svg {
+    transform: rotate(180deg);
 }
 
 .ac-panel{
     background-color: #1C1D20;
 }
+
+
 
 #text-about-me{
     padding-left: 0;
@@ -60,16 +129,80 @@
     line-height: 20px;
 }
 
+/* ------------Accordion------------ */
+
+/* ----------- Swiper -------------- */
+.carousel-about-me-list{
+    width: 100%;
+}
+.carousel-about-me-item{
+    width: 130px;
+    height: 130px;
+    border: rgba(250, 250, 250, 0.20) solid 1px;
+    border-radius: 50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-next{
+    padding: 20px;
+    background-color: #8a8a8a;
+}
+
+
+/* ----------- Swiper -------------- */
+
 @media screen and (min-width:768px){
-    .about-me-sec{
-        padding: 32px 16px;
+    /* about me */
+    .about-me-hero{
+        margin-bottom: 64px;
     }
-    
+    .about-me-hero-item:first-child {
+            padding: 64px 64px 436px 64px;
+    }
+    .a-m-hero-text{
+        font-size: 38px;
+        line-height: 105.6%;
+    }
+    /* about me */
+    .list-about-me{
+        margin-bottom: 64px;
+    }
+    .about-me-sec{
+        padding: 32px ;
+    }
+    /* ----------- Swiper -------------- */
+    .carousel-about-me-item {
+        width: 200px;
+        height: 200px;
+    }
+    /* ----------- Swiper -------------- */
 }
 
 @media screen and (min-width:1440px) {
+    /* about me */
+    .about-me-hero{
+        display: flex;
+        gap: 16px;
+        margin-bottom: 96px;
+    }
+
+.about-me-hero-item{
+    flex-basis: calc((100% - 16px) / 2);
+}
+    .about-me-hero-item:first-child {
+        margin-bottom: 0;
+        padding: 64px 64px 436px 64px;
+    }
+    
+    /* about me */
+
+    .list-about-me {
+        margin-bottom: 96px;
+    }
     .about-me-sec {
-            padding: 48px 16px;
+            padding: 48px 32px;
         }
     #list-item-about-me{
         padding-left: 50%;
