@@ -140,9 +140,14 @@
     height: 130px;
     border: rgba(250, 250, 250, 0.20) solid 1px;
     border-radius: 50% ;
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
+}
+
+.swiper-button-next{
+    padding: 20px;
+    background-color: #8a8a8a;
 }
 
 
