@@ -4,6 +4,7 @@ import './js/faq';
 import './js/review'
 import './js/slider-projects-section'
 import './js/about-me';
+import './js/mob-menu';
 
 
 
