@@ -16,7 +16,6 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const nextBtn = document.querySelector(".swiper-button-next")
-
-nextBtn.addEventListener("click", () => swiper.slideNext())
+const nextBtn = document.querySelector(".swiper-button-next");
+nextBtn.addEventListener("click", () => swiper.slideNext());
 
