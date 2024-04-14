@@ -1,0 +1,25 @@
+body {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  color: #fafafa;
+  background-color: #1c1d20;
+} /*! видалити*/
+
+html {
+  scroll-behavior: smooth;
+} /*! видалити*/
+
+.benefits-btn {
+  background: transparent;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  width: 187px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  padding: 18px 36px 18px 36px;
+  transition: ;
+}

@@ -1,0 +1,288 @@
+/* ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #1c1d20;
+} */
+
+/* ===================== MOBILE ===================================*/
+@media screen and (max-width: 767px) {
+  .projects-section {
+    width: 343px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .title-wrapper {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(250, 250, 250, 0.4);
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .presentation-wrapper {
+    border-radius: 24px;
+  }
+
+  .proj-description {
+    background-color: #fafafa;
+    border-radius: 24px 24px 0px 0px;
+    padding: 32px;
+  }
+
+  .technologies {
+    width: 279px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 6px 6px;
+  }
+
+  .tech-item {
+    border: 1px solid rgba(28, 29, 32, 0.2);
+    border-radius: 60px;
+    padding: 13px 18px;
+    color: #1c1d20;
+    letter-spacing: -0.02em;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .proj-slogan {
+    color: #1c1d20;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+    width: 279px;
+    margin: 96px auto 0;
+  }
+
+  .see-proj-btn {
+    border-radius: 60px;
+    padding: 13px 32px;
+    border: none;
+    color: #fafafa;
+    background-color: #ed3b44;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    margin-top: 32px;
+  }
+
+  .see-proj-btn:hover {
+    background-color: #e0373f;
+  }
+
+  .see-proj-btn:focus {
+    background-color: #e0373f;
+  }
+
+  .swiper-slide {
+    background-color: #242527;
+    border-radius: 0px 0px 24px 24px;
+    padding: 100px 0;
+    justify-items: center;
+  }
+
+  .proj-screenshot {
+    width: 311px;
+    margin: 0 auto;
+  }
+
+  .swiper-control-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 auto;
+  }
+
+  .swipe-back-btn {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #fafafa;
+    background-color: transparent;
+  }
+
+  .swipe-forward-btn {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #fafafa;
+    background-color: transparent;
+  }
+
+  .arrow-back-icon {
+    stroke: #fafafa;
+    fill: transparent;
+    width: 24px;
+    height: 24px;
+  }
+
+  .arrow-forward-icon {
+    stroke: #fafafa;
+    fill: transparent;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* ======================= TABLET ================================= */
+@media screen and (min-width: 768px) {
+  .projects-section {
+    width: 704px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .title-wrapper {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(250, 250, 250, 0.4);
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .presentation-wrapper {
+    border-radius: 24px;
+  }
+
+  .proj-description {
+    background-color: #fafafa;
+    border-radius: 24px 24px 0px 0px;
+    padding: 64px;
+  }
+
+  .technologies {
+    width: 312px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+  }
+
+  .tech-item {
+    border: 1px solid rgba(28, 29, 32, 0.2);
+    border-radius: 60px;
+    padding: 18px;
+    color: #1c1d20;
+    letter-spacing: -0.02em;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .proj-slogan {
+    color: #1c1d20;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    width: 494px;
+    margin: 164px 0 0 0;
+  }
+
+  .see-proj-btn {
+    border-radius: 60px;
+    padding: 18px 50px;
+    border: none;
+    color: #fafafa;
+    background-color: #ed3b44;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    margin-top: 32px;
+  }
+
+  .see-proj-btn:hover {
+    background-color: #e0373f;
+  }
+
+  .see-proj-btn:focus {
+    background-color: #e0373f;
+  }
+
+  .swiper-slide {
+    background-color: #242527;
+    border-radius: 0px 0px 24px 24px;
+    padding: 120px 0;
+    justify-items: center;
+  }
+
+  .proj-screenshot {
+    width: 614px;
+    margin: 0 auto;
+  }
+
+  .swiper-control-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  .swipe-back-btn {
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    border: 1px solid #fafafa;
+    background-color: transparent;
+  }
+
+  .swipe-forward-btn {
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    border: 1px solid #fafafa;
+    background-color: transparent;
+  }
+
+  .arrow-back-icon {
+    stroke: #fafafa;
+    fill: transparent;
+    width: 32px;
+    height: 32px;
+  }
+
+  .arrow-forward-icon {
+    stroke: #fafafa;
+    fill: transparent;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* ======================= DESKTOP ================================ */
+@media screen and (min-width: 1158px) {
+  .projects-section {
+    width: 1376px;
+  }
+
+  .presentation-wrapper {
+    display: flex;
+    flex-direction: row;
+    border-radius: 24px;
+  }
+
+  .proj-description {
+    border-radius: 24px 0px 0px 24px;
+  }
+
+  .swiper-slide {
+    border-radius: 0px 24px 24px 0px;
+    padding: 120px 0;
+  }
+}
