@@ -18,11 +18,11 @@
         ><button class="see-proj-btn" type="button">See project</button></a
       >
     </div>
-    <div class="swiper">
-      <div class="swiper-wrapper visual-content">
-        <div class="swiper-slide">
+    <div class="swiper" id="proj-swiper">
+      <ul class="swiper-wrapper visual-content">
+        <li class="swiper-slide">
           <img
-            src="./img/projects/projects-mob.jpeg"
+            src="./img/projects/projects-tab.jpeg"
             srcset="
               ./img/projects/projects-tab@2x.jpeg 2x,
               ./img/projects/projects-tab@3x.jpeg 3x
@@ -30,10 +30,10 @@
             class="proj-screenshot"
             alt="library app screenshots"
           />
-        </div>
-        <div class="swiper-slide">
+        </li>
+        <li class="swiper-slide">
           <img
-            src="./img/projects/projects-mob-2.jpeg"
+            src="./img/projects/projects-tab-2.jpeg"
             srcset="
               ./img/projects/projects-tab-2@2x.jpeg 2x,
               ./img/projects/projects-tab-2@3x.jpeg 3x
@@ -41,10 +41,10 @@
             class="proj-screenshot"
             alt="petlove app, vet checking up a dog's ear"
           />
-        </div>
-        <div class="swiper-slide">
+        </li>
+        <li class="swiper-slide">
           <img
-            src="./img/projects/projects-mob-3.jpeg"
+            src="./img/projects/projects-tab-3.jpeg"
             srcset="
               ./img/projects/projects-tab-3@2x.jpeg 2x,
               ./img/projects/projects-tab-3@3x.jpeg 3x
@@ -52,22 +52,19 @@
             class="proj-screenshot"
             alt="vocabBuilder language learning app"
           />
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+        </li>
+      </ul>
     </div>
   </div>
   <div class="swiper-control-wrapper">
     <button class="swipe-back-btn" type="button">
       <svg class="arrow-back-icon" width="24" height="24">
-        <use href="./img/sprite.svg.svg#icon-arrow-left"></use>
+        <use href="./img/sprite.svg.svg#icon-arrow-narrow-left-a"></use>
       </svg>
     </button>
     <button class="swipe-forward-btn" type="button">
       <svg class="arrow-forward-icon" width="24" height="24">
-        <use href="./img/sprite.svg.svg#icon-arrow-right"></use>
+        <use href="./img/sprite.svg.svg#icon-arrow-narrow-right-a"></use>
       </svg>
     </button>
   </div>

@@ -50,6 +50,18 @@
                 d="M16.232 31.768c-8.58 0-15.536-6.956-15.536-15.536s6.956-15.536 15.536-15.536c8.58 0 15.536 6.956 15.536 15.536s-6.956 15.536-15.536 15.536z">
             </path>
         </symbol>
+        <symbol id="icon-arrow-narrow-left-a" viewBox="0 0 32 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M26.667 16h-21.333"></path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M13.333 24l-8-8 8-8"></path>
+        </symbol>
+        <symbol id="icon-arrow-narrow-right-a" viewBox="0 0 32 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M5.333 16h21.333"></path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M18.667 8l8 8-8 8"></path>
+        </symbol>
         <symbol id="icon-Arrow-up" viewBox="0 0 32 32">
             <path fill="#fafafa"
                 d="M19.269 18.438l-3.81-3.81 0.541-0.533 0.533 0.533-3.81 3.81-1.074-1.074 4.35-4.35 4.343 4.35-1.074 1.074z">
