@@ -9,10 +9,50 @@ new Accordion(according, {
     collapse: false,
 });
 
+import Swiper from 'swiper';
+import { Keyboard, Mousewheel, Navigation } from 'swiper/modules';
+import 'swiper/css';
 
-import { initSwiper } from './api.js';
 const swiperAboutMe = document.querySelector("#carousel-about-me-list");
-const SAM = initSwiper(swiperAboutMe, 'horizontal', true);
 
-// new Swiper(swiperAboutMe);
+const buttonEl = document.querySelector('.swiper-button-next');
+
+const swiper = new Swiper(swiperAboutMe, {
+  modules: [Navigation, Keyboard, Mousewheel],
+  direction: 'horizontal',
+  spaceBetween: 0,
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  slidesPerView: 2,
+  initialSlide: 1,
+  updateOnWindowResize: true,
+    breakpoints: {
+        319: {
+        slidesPerView:2,
+    },
+    767: {
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 6,
+    },
+  },
+  mousewheel: {
+    enabled: true,
+    invert: true,
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  loop: true,
+  allowTouchMove: true,
+  followFinger: true,
+  simulateTouch: true,
+});
+
+
+
 
