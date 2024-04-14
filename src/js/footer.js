@@ -33,24 +33,6 @@ commentInput.addEventListener('input', function () {
       ) - 1;
   }
 });
-// !ВАРІАНТ 2
-
-// commentInput.addEventListener('input', function () {
-//   const widthInput = commentInput.clientWidth;
-
-//   console.log(widthInput);
-//   const fontSizeInput = parseFloat(
-//     window.getComputedStyle(commentInput).fontSize
-//   );
-//   const maxLength = Math.floor(widthInput / fontSizeInput) - 1;
-//   const currentLength = commentInput.value.length;
-//   if (currentLength > maxLength) {
-//     const truncatedText = commentInput.value.slice(0, maxLength);
-//     const displayText = truncatedText + '...';
-//     commentInput.value = displayText;
-//   }
-// });
-// !==================== ОБРІЗКА ТЕКСТУ
 
 // !==================== Перевірка пошти, повертає true або false
 function validateEmail(email) {
@@ -59,43 +41,43 @@ function validateEmail(email) {
 }
 
 // !==================== Post запит
-async function sendRequest(email, comment) {
-  try {
-    const response = await postReview(email, comment);
-    console.log(response);
-    if (response.success) {
-      popup.classList.add('open');
-      emailInput.value = '';
-      commentInput.value = '';
-    } else {
-      alert('There was an error. Please try again later.');
-    }
-  } catch (error) {
-    console.error('Error:', error);
-    alert('There was an error. Please try again later.');
-  }
-}
+// async function sendRequest(email, comment) {
+//   try {
+//     const response = await postReview(email, comment);
+//     console.log(response);
+//     if (response.success) {
+//       popup.classList.add('open');
+//       emailInput.value = '';
+//       commentInput.value = '';
+//     } else {
+//       alert('There was an error. Please try again later.');
+//     }
+//   } catch (error) {
+//     console.error('Error:', error);
+//     alert('There was an error. Please try again later.');
+//   }
+// }
 
 // !==================== Сплиття підсказки
-sendButton.addEventListener('click', function (event) {
-  event.preventDefault();
+// sendButton.addEventListener('click', function (event) {
+//   event.preventDefault();
 
-  const email = emailInput.value;
-  const comment = commentInput.value;
-  if (!validateEmail(email)) {
-    invalidMessage.style.display = 'block';
-    successMessage.style.display = 'none';
-    emailInput.classList.remove('success');
-    emailInput.classList.add('remove');
-
-    return;
-  }
-  emailInput.classList.remove('remove');
-  emailInput.classList.add('success');
-  successMessage.style.display = 'block';
-  invalidMessage.style.display = 'none';
-  sendRequest(email, comment);
-});
+//   const email = emailInput.value;
+//   const comment = commentInput.value;
+//   if (!validateEmail(email)) {
+//     invalidMessage.style.display = 'block';
+//     successMessage.style.display = 'none';
+//     emailInput.classList.remove('success');
+//     emailInput.classList.add('remove');
+//     emailInput.focus();
+//     return;
+//   }
+//   emailInput.classList.remove('remove');
+//   emailInput.classList.add('success');
+//   successMessage.style.display = 'block';
+//   invalidMessage.style.display = 'none';
+//   sendRequest(email, comment);
+// });
 
 // !==================== Закриття модального вікна
 closeModalButton.addEventListener('click', function () {
@@ -124,6 +106,6 @@ function closePopup() {
 }
 
 //! ======================= Відкриття модального вікна за кліком, в коді не потрібен, для перевірки
-// sendButton.addEventListener('click', function (e) {
-//   popup.classList.add('open');
-// });
+sendButton.addEventListener('click', function (e) {
+  popup.classList.add('open');
+});
