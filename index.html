@@ -19,7 +19,7 @@
     <script type="module" crossorigin src="/project-js-group-11/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-js-group-11/assets/vendor-278829d3.js">
     <link rel="stylesheet" href="/project-js-group-11/assets/vendor-d5558669.css">
-    <link rel="stylesheet" href="/project-js-group-11/assets/index-6e3cb78b.css">
+    <link rel="stylesheet" href="/project-js-group-11/assets/index-4c2e38fe.css">
   </head>
   <body>
     <header class="header">
@@ -588,26 +588,39 @@
       <img src="/project-js-group-11/assets/logo-man-75c611ca.png" alt="man" />
     </picture>
     <h2 class="work-together-title">
-      LET'S <span class="work-together-span">WORK</span> TOGETHER
+      LET'S <span class="work-together-span">WORK</span><br />
+      TOGETHER
     </h2>
 
     <form id="work-together-form" class="work-together-form">
       <div class="work-together-form-group">
         <input
           id="work-together-input-email"
+          class="work-together-input-text"
           name="user-email"
           type="email"
           placeholder="clients@gmail.com"
           pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
         />
-        <div id="success-message" style="display: none">Success!</div>
-        <div id="invalid-message" style="display: none">
+        <div
+          class="work-together-text"
+          id="success-message"
+          style="display: none"
+        >
+          Success!
+        </div>
+        <div
+          class="work-together-text"
+          id="invalid-message"
+          style="display: none"
+        >
           Invalid email, try again!
         </div>
       </div>
       <div class="work-together-form-group">
         <input
           id="work-together-input-text"
+          class="work-together-input-text"
           name="user-comments"
           type="text"
           placeholder="comments"
