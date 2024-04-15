@@ -115,6 +115,10 @@ html {
     gap: 16px;
   }
 
+  .benefits-item {
+    width: calc((100% - 16px) / 2);
+  }
+
   .benefits-btn {
     background: transparent;
     border: 1px solid rgba(250, 250, 250, 0.2);
@@ -138,6 +142,17 @@ html {
 @media screen and (min-width: 1440px) {
   .benefits {
     margin: 82px 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .benefits-property {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
   }
 
   .our-benefits-list {
