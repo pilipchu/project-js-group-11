@@ -1,51 +1,151 @@
-/* ========== DESKTOP ========= */
-
-.header {
+/* ========== MOBILE ========= */
+.header-sec {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 32px;
   width: 100%;
   z-index: 1000;
 }
-.header-section {
-  margin-top: 32px;
-  margin-left: 32px;
-  margin-right: 32px;
+.header-div {
   display: flex;
-  align-items: stretch;
   justify-content: space-between;
+  padding: 0 16px;
 }
-.fake-btn {
+.logo-div-header{
+      display: flex;
+        gap: 8px;
+}
+.logo-man-head{
+  height: fit-content;
+}
+#menu-button{
+  display: none;
+}
+#menu-list{
+  display: none;
+}
+.fake-btn-head {
+  display: none;
+}
+.burger__button{
   display: flex;
-  padding: 18px 24px;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
-  border-radius: 60px;
-  background: #ed3b44;
-  height: 18px;
-}
-.fake-btn-text {
-  color: #fafafa;
-
-  font-family: 'Inter Tight';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.32px;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  height: 28px;
+  min-width: 28px;
 }
 
-.logo {
+/* ====================== TABLET =============================== */
+@media screen and (min-width: 768px){
+    .header-div {
+      padding: 0 32px;
+    }
+
+  #menu-list {
+     display: none;
+  }
+  .burger__button{
+    display: none;
+  }
+/*--------------------------меню з підкресленнями---------------*/
+    #menu-button {
+      display: block;
+      padding: 10px 15px 0;
+      color: #FAFAFA;
+      font-family: "Inter Tight";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      position: relative;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+  
+    #menu-button::before {
+      content: "";
+      display: block;
+      width: 60%;  
+      height: 2px;
+      background-color: transparent;
+      background-color: #FAFAFA;
+      transition: background-color 0.3s;
+      position: absolute;
+      bottom: -2px;
+      left: 15px;
+      right: 0;
+    }
+  
+    #menu-button:hover::before,
+    #menu-button:focus::before {
+      background-color: #ED3B44;
+    }
+    #menu-button:hover,
+    #menu-button:focus {
+      color: #ED3B44;
+    }
+
+.menu-hed-list{
+  margin-top: 15px;
   display: flex;
-  align-items: flex-start;
-  gap: 8px;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
 }
+
+.menu-hed-item {
+color: #FAFAFA;
+font-size: 16px;
+font-weight: 500;
+position: relative;
+cursor: pointer;
+transition: color 0.3s;
+}
+
+.menu-hed-item::before {
+content: "";
+display: block;
+width: 0%;
+height: 2px;
+background-color: transparent;
+transition: background-color 0.3s, width 0.3s ;
+position: absolute;
+bottom: -2px;
+left: 0;
+right: 0;
+}
+
+.menu-hed-item:hover::before,
+.menu-hed-item:focus::before {
+background-color: #ED3B44;
+width: 100%;
+}
+
+.menu-hed-item:hover,
+.menu-hed-item:focus {
+color: #ED3B44;
+}
+
+
+  /* -------------------------- */
+    .fake-btn-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background: #ed3b44;
+    height: 55px;
+    width: 163px;
+    color: #fafafa;
+    font-family: 'Inter Tight';
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 250ms linear;
+    }
+    .fake-btn-head:hover,
+        .fake-btn-head:focus{
+          background-color:#E0373F;
+        }
+  }
 
 /* ========== DESKTOP ========= */
-
-/* ========== TABLET ========= */
-/* ========== TABLET ========= */
-
-/* ========== MOBILE ========= */
-/* ========== MOBILE ========= */
