@@ -1,4 +1,4 @@
-ul {
+/* ul {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
@@ -6,7 +6,7 @@ ul {
 
 body {
   background-color: #1c1d20;
-}
+} */
 
 /* ===================== MOBILE ===================================*/
 @media screen and (max-width: 767px) {
@@ -177,7 +177,6 @@ body {
     display: flex;
     flex-direction: row;
     gap: 6px;
-    max-height: 55px;
   }
 
   .tech-item {
@@ -186,7 +185,7 @@ body {
     padding: 18px;
     color: #1c1d20;
     letter-spacing: -0.02em;
-    font-size: 16px;
+    font-size: 15.5px;
     font-weight: 500;
   }
 

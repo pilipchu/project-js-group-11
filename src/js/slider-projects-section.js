@@ -1,7 +1,9 @@
 import Swiper from 'swiper'
 import 'swiper/css'
-import { Navigation } from 'swiper/modules'
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules'
 import 'swiper/css/navigation'
+import 'swiper/css/keyboard'
+import 'swiper/css/mousewheel'
 
 // import { initSwiper } from './api'
 // const projectsSwiper = initSwiper('#proj-swiper', 'horizontal', true);
@@ -25,13 +27,12 @@ const swiper = new Swiper('#proj-swiper', {
     enabled: true,
     invert: true,
   },
-  allowTouchMove: true,
-  followFinger: true,
   simulateTouch: true,
+  followFinger: true,
+  allowTouchMove: true,
   allowSlideNext: true,
   allowSlidePrev: true,
-  modules: [ Navigation],
- 
+  modules: [Navigation, Keyboard, Mousewheel],
 });
 
 const swipeForwardIcon = document.querySelector(".arrow-forward-icon")
