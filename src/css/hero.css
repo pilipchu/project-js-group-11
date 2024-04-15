@@ -3,7 +3,7 @@
   position: relative;
   left:auto;
   margin: 0 auto;
-      background-image: url(./img/hero/Hero-mob.png);
+      background-image: url(../img/hero/Hero-mob.png);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: left;
@@ -17,7 +17,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url(./img/hero/Hero-mob@2x.png)
+    background-image: url(../img/hero/Hero-mob@2x.png)
   }
 }
 
@@ -84,7 +84,7 @@
 @media screen and (min-width: 768px) {
 
   .hero-section {
-    background-image: url(./img/hero/Hero-tab.png);
+    background-image: url(../img/hero/Hero-tab.png);
     max-width: 768px;
     /* height: 1024px; */
     padding: 300px 32px 32px 32px;
@@ -93,7 +93,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
           .hero-section {
-            background-image: url(./img/hero/Hero-tab@2x.png)
+            background-image: url(../img/hero/Hero-tab@2x.png)
           }
         }
 
@@ -151,7 +151,7 @@
 @media screen and (min-width: 1440px) {
  
   .hero-section {
-    background-image: url(./img/hero/Hero-desc.png);
+    background-image: url(../img/hero/Hero-desc.png);
     max-width: 1440px;
     /* height: 900px; */
     padding: 300px 32px 32px 178px;
@@ -161,7 +161,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .hero-section {
-      background-image: url(./img/hero/Hero-desc@2x.png);
+      background-image: url(../img/hero/Hero-desc@2x.png);
     }
   }
 
