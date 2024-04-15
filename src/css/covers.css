@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.is_hidden {
+    display: none;
+}
+
+/* 
+//MОБІЛЬНА ВЕРСІЯ */
+
+@media (min-width: 320px) {
+    
+    .section_covers {
+        margin: 32px 0px;
+    }
+
+    .conteiner_covers {
+        height: 508px;
+        width: 100%;
+        overflow: hidden;
+        background: url(../img/covers/three-red-stains.png);
+        height: 100%;
+        z-index: -1;
+    }
+
+    .content {
+        position: relative;
+    }
+    
+    .marquee {
+        /* top: 100px; */
+        /* position: absolute; */
+        /* height: 508px; */
+        /* right: -500px; */
+        /* left: 0; */
+        /* overflow: hidden; */
+    }
+    
+    .marquee__inner {
+        /* padding-top: -200px; */
+        height: 22vh;
+        display: flex;
+        transform: rotate(15deg);
+    }
+    
+    .marquee__inner .five_row {
+        display: none;
+    }
+
+    .marquee__line {
+        flex-shrink: 0;
+        margin: 4%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% / 10);
+        white-space: nowrap;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-name: marqueeLine;
+        animation-direction: alternate;
+        width: 282px;
+        height: 162px;
+    }
+    
+    @keyframes marqueeLine {
+        from {
+            transform: translateX(-20%);
+        }
+        
+        to {
+            transform: translateX(-180%);
+        }
+    }
+    
+}
+    
+/* ВЕРСІЯ ДЛЯ ПЛАНШЕТУ */
+@media (min-width: 768px) {
+
+    .section_covers {
+        margin: 48px 0px;
+    }
+    
+    .conteiner_covers {
+        width: 100%;
+        height: 960px;
+        background: url(../img/covers/three-red-stains.png);
+    }
+
+    .content {
+        position: relative;
+    }
+    
+    .marquee {
+        position: absolute;
+        width: 100%;
+        right: -500px;
+        left: 0;
+        overflow: hidden;
+    }
+    
+    .marquee__inner {
+        height: 42vh;
+        display: flex;
+        transform: rotate(15deg);
+    }
+    .marquee__inner .five_row {
+        display: none;
+    }
+    
+    .marquee__line {
+        flex-shrink: 0;
+        margin: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% / 10);
+        white-space: nowrap;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-name: marqueeLine;
+        width: 544px;
+        height: 314px;
+        }
+    
+    @keyframes marqueeLine {
+        from {
+            transform: translateX(-20%);
+        }
+    
+        to {
+            transform: translateX(-180%);
+        }
+    }
+    
+}
+
+
+/* ДЕСКТОПНА ВЕРСІЯ */
+
+@media (min-width: 1440px) {
+
+    .section_covers {
+        margin: 82px 0px;
+    }
+
+    .conteiner_covers {
+        width: 100%;
+        height: 960px;    
+        background: url(../img/covers/red-stain.png);
+    }
+    
+    .content {
+        position: relative;
+        height: 960px;
+    } */
+
+    .marquee {
+        height: 960px;    /*   !!!_НЕ ПРАЦЮЄ_!!!    */
+        position: absolute;
+        right: -500px;
+        top: 200px;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .marquee__inner {
+        height: 25vh;
+        display: flex;
+        transform: rotate(15deg);
+    }
+    .marquee__inner .five_row {
+        display: block;
+    }
+
+    .marquee__line {
+        flex-shrink: 0;
+        margin: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% / 10);
+        white-space: nowrap;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-name: marqueeLine;
+        width: 544px;
+        height: 314px;
+    }
+       
+}

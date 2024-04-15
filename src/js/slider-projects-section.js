@@ -34,6 +34,7 @@ const swiper = new Swiper('#proj-swiper', {
  
 });
 
+
 const swipeForwardIcon = document.querySelector(".arrow-forward-icon")
 const swipeBackIcon = document.querySelector(".arrow-back-icon")
 
@@ -53,3 +54,10 @@ swiper.on('fromEdge', function () {
   swipeForwardIcon.classList.remove("disabled-swipe")
   swipeForwardBtn.classList.remove("disabled-swipe")
 })
+
+
+const nextBtn = document.querySelector(".swiper-button-next");
+nextBtn.addEventListener("click", () => swiper.slideNext());
+
+
+
