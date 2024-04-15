@@ -51,16 +51,16 @@
 .reviews-btn-prev,
 .reviews-btn-next {
     border: 1px solid rgba(250, 250, 250, 0.5);
-    border-radius: 60px;
+    border-radius: 50%;
     width: 52px;
     height: 52px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     fill: none;
     stroke: #fafafa;
     cursor: pointer;
-    transition: stroke 1s, border 1s;
+    transition: stroke 1s, border 1s; */
     background-color: transparent;
 }
 
@@ -150,8 +150,11 @@
 
     .reviews-btn-prev,
     .reviews-btn-next {
+        border-radius: 50%;
         width: 68px;
         height: 68px;
+        border: 1px solid #fafafa;
+        background-color: transparent;
     }
 
     .reviews-list .reviews-item {
