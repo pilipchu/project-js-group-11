@@ -10,7 +10,7 @@ html {
 } /*! видалити*/
 
 .benefits {
-  margin: 32 0;
+  margin: 32px 0;
 }
 
 .main-title {
@@ -41,10 +41,24 @@ html {
   background: #242527;
 }
 
-.benefits-icon {
+.benefits-list-icon {
+  fill: #fafafa;
+  border-radius: 10px;
+  background: #ed3b44;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  margin-bottom: 64px;
+  justify-content: center;
+  align-items: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.benefits-list-icon {
+.benefits-list-icon:hover .benefits-list-icon:focus {
+  background: #e0373f;
+  fill: #1c1d20;
 }
 
 .benefits-title {
@@ -92,10 +106,29 @@ html {
 
 /* ============== TABLET BENEFITS STYLES ====================== */
 @media screen and (min-width: 768px) {
+  .benefits {
+    margin: 48px auto;
+  }
   .our-benefits {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 16px;
+  }
+
+  .benefits-btn {
+    background: transparent;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    width: 187px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 64px;
+    padding: 18px 36px 18px 36px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -103,8 +136,12 @@ html {
 
 /* ============== DESKTOP BENEFITS STYLES ====================== */
 @media screen and (min-width: 1440px) {
-  .our-benefits {
-    flex-direction: row;
+  .benefits {
+    margin: 82px 0;
+  }
+
+  .our-benefits-list {
+    display: flex;
     flex-wrap: wrap;
     gap: 16px;
   }
