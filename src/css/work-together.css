@@ -64,7 +64,15 @@
     border-bottom: 1px solid rgb(60, 188, 129);
 }
 
+.work-together-input-text.success:focus {
+    border-bottom: 1px solid rgb(60, 188, 129);
+}
+
 .remove {
+    border-bottom: 1px solid rgb(231, 74, 59);
+}
+
+.work-together-input-text.remove:focus {
     border-bottom: 1px solid rgb(231, 74, 59);
 }
 
