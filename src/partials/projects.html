@@ -1,71 +1,73 @@
 <section class="projects-section" id="projects">
-  <h2 class="title-wrapper">Projects</h2>
-  <div class="presentation-wrapper">
-    <div class="proj-description">
-      <ul class="technologies">
-        <li class="tech-item">#react</li>
-        <li class="tech-item">#js</li>
-        <li class="tech-item">#node js</li>
-        <li class="tech-item">#git</li>
-      </ul>
-      <p class="proj-slogan">
-        Programming Across Borders: Ideas, Technologies, Innovations
-      </p>
-      <a
-        class="github-link"
-        href="https://github.com/pilipchu/project-js-group-11"
-        target="_blank"
-        ><button class="see-proj-btn" type="button">See project</button></a
-      >
+  <div class="container">
+    <div class="proj-title-wrapper"><h2>Projects</h2></div>
+    <div class="presentation-wrapper">
+      <div class="proj-description">
+        <ul class="technologies">
+          <li class="tech-item">#react</li>
+          <li class="tech-item">#js</li>
+          <li class="tech-item">#node js</li>
+          <li class="tech-item">#git</li>
+        </ul>
+        <p class="proj-slogan">
+          Programming Across Borders: Ideas, Technologies, Innovations
+        </p>
+        <a
+          class="github-link"
+          href="https://github.com/pilipchu/project-js-group-11"
+          target="_blank"
+          ><button class="see-proj-btn" type="button">See project</button></a
+        >
+      </div>
+      <div class="swiper swiper-proj" id="proj-swiper">
+        <ul class="swiper-wrapper swiper-proj-wrapper">
+          <li class="swiper-slide swiper-proj-slide">
+            <img
+              src="./img/projects/projects-tab.jpeg"
+              srcset="
+                ./img/projects/projects-tab@2x.jpeg 2x,
+                ./img/projects/projects-tab@3x.jpeg 3x
+              "
+              class="proj-screenshot"
+              alt="library app screenshots"
+            />
+          </li>
+          <li class="swiper-slide swiper-proj-slide">
+            <img
+              src="./img/projects/projects-tab-2.jpeg"
+              srcset="
+                ./img/projects/projects-tab-2@2x.jpeg 2x,
+                ./img/projects/projects-tab-2@3x.jpeg 3x
+              "
+              class="proj-screenshot"
+              alt="petlove app, vet checking up a dog's ear"
+            />
+          </li>
+          <li class="swiper-slide swiper-proj-slide">
+            <img
+              src="./img/projects/projects-tab-3.jpeg"
+              srcset="
+                ./img/projects/projects-tab-3@2x.jpeg 2x,
+                ./img/projects/projects-tab-3@3x.jpeg 3x
+              "
+              class="proj-screenshot"
+              alt="vocabBuilder language learning app"
+            />
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="swiper" id="proj-swiper">
-      <ul class="swiper-wrapper">
-        <li class="swiper-slide visual-swiper-content">
-          <img
-            src="./img/projects/projects-tab.jpeg"
-            srcset="
-              ./img/projects/projects-tab@2x.jpeg 2x,
-              ./img/projects/projects-tab@3x.jpeg 3x
-            "
-            class="proj-screenshot"
-            alt="library app screenshots"
-          />
-        </li>
-        <li class="swiper-slide visual-swiper-content">
-          <img
-            src="./img/projects/projects-tab-2.jpeg"
-            srcset="
-              ./img/projects/projects-tab-2@2x.jpeg 2x,
-              ./img/projects/projects-tab-2@3x.jpeg 3x
-            "
-            class="proj-screenshot"
-            alt="petlove app, vet checking up a dog's ear"
-          />
-        </li>
-        <li class="swiper-slide visual-swiper-content">
-          <img
-            src="./img/projects/projects-tab-3.jpeg"
-            srcset="
-              ./img/projects/projects-tab-3@2x.jpeg 2x,
-              ./img/projects/projects-tab-3@3x.jpeg 3x
-            "
-            class="proj-screenshot"
-            alt="vocabBuilder language learning app"
-          />
-        </li>
-      </ul>
+    <div class="swiper-control-wrapper">
+      <button class="swipe-back-btn disabled-swipe" type="button">
+        <svg class="arrow-back-icon disabled-swipe" width="24" height="24">
+          <use href="./img/sprite.svg.svg#icon-arrow-narrow-left-a"></use>
+        </svg>
+      </button>
+      <button class="swipe-forward-btn" type="button">
+        <svg class="arrow-forward-icon" width="24" height="24">
+          <use href="./img/sprite.svg.svg#icon-arrow-narrow-right-a"></use>
+        </svg>
+      </button>
     </div>
-  </div>
-  <div class="swiper-control-wrapper">
-    <button class="swipe-back-btn disabled-swipe" type="button">
-      <svg class="arrow-back-icon disabled-swipe" width="24" height="24">
-        <use href="./img/sprite.svg.svg#icon-arrow-narrow-left-a"></use>
-      </svg>
-    </button>
-    <button class="swipe-forward-btn" type="button">
-      <svg class="arrow-forward-icon" width="24" height="24">
-        <use href="./img/sprite.svg.svg#icon-arrow-narrow-right-a"></use>
-      </svg>
-    </button>
   </div>
 </section>
