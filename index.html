@@ -19,7 +19,7 @@
     <script type="module" crossorigin src="/project-js-group-11/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-js-group-11/assets/vendor-8e20b2bf.js">
     <link rel="stylesheet" href="/project-js-group-11/assets/vendor-2a6ab5fa.css">
-    <link rel="stylesheet" href="/project-js-group-11/assets/index-3294c00b.css">
+    <link rel="stylesheet" href="/project-js-group-11/assets/index-9488430a.css">
   </head>
   <body>
     <header class="header-sec">
@@ -595,16 +595,18 @@
     <div class="swiper-cont">
         <ul class="reviews-list swiper-wrapper"></ul>
         <nav class="swiper-nav">
-            <button class="reviews-btn-prev">
-                <svg class="icon-arr">
-                    <use href="/project-js-group-11/assets/sprite.svg-5753ac91.svg#icon-arrow-left"></use>
-                </svg>
-            </button>
-            <button class="reviews-btn-next">
-                <svg class="icon-arr">
-                    <use href="/project-js-group-11/assets/sprite.svg-5753ac91.svg#icon-arrow-right"></use>
-                </svg>
-            </button>
+            <div class="reviews-control-wrap">
+                <button class="reviews-btn-prev reviews-disabled-swipe" type="button">
+                    <svg class="icon-prev-arr reviews-disabled-swipe">
+                        <use href="/project-js-group-11/assets/sprite.svg-5753ac91.svg#icon-arrow-narrow-left-a"></use>
+                    </svg>
+                </button>
+                <button class="reviews-btn-next" type="button">
+                    <svg class="icon-arr">
+                        <use href="/project-js-group-11/assets/sprite.svg-5753ac91.svg#icon-arrow-narrow-right-a"></use>
+                    </svg>
+                </button>
+            </div>
         </nav>
     </div>
     <div class="not-fnd">
