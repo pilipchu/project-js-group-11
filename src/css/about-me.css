@@ -44,6 +44,7 @@
     height: 100%;
     overflow: hidden;
     border-radius: 24px;
+    
 }
 .a-m-hero-text{
     font-family: "Inter Tight";
@@ -51,6 +52,7 @@
     line-height: 1.16;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .paint-func{
@@ -137,7 +139,7 @@
 #text-about-me{
     padding-left: 0;
     color: #fff;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 20px;
 }
@@ -181,6 +183,11 @@ width: 100%;
 
 .swiper-button-next::after{
     display: none;
+}
+
+.right-arrow-icon-about-me{
+width: 28px;
+height: 28px;
 }
 
 
@@ -239,9 +246,18 @@ width: 100%;
     .about-me-sec {
             padding: 48px 32px;
         }
-    #list-item-about-me{
+
+    .ac-panel{
         padding-left: 50%;
     }
+    .ac-text{
+        width: 612px;
+    }
+
+        .education-a-m{
+            width: 465px;
+        }
+
     .ac.is-active .ac-panel {
         padding-bottom: 30px;
     }
