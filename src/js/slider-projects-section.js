@@ -32,6 +32,7 @@ const swiper = new Swiper('#proj-swiper', {
   allowTouchMove: true,
   allowSlideNext: true,
   allowSlidePrev: true,
+  setWrapperSize: true,
   modules: [Navigation, Keyboard, Mousewheel],
 });
 
