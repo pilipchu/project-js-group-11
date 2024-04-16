@@ -133,10 +133,12 @@
     margin: 82px 0;
   }
 
+
+  /* .container {     
   .benefits-container {
     display: flex;
     justify-content: space-between;
-  }
+  } */
 
   .benefits-property {
     display: flex;
