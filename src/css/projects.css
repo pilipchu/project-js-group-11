@@ -87,9 +87,13 @@ body {
     background-color: #e0373f;
   }
 
-  .swiper-proj-wrapper {
+  .swiper-proj {
+    max-width: 343px;
     background-color: #242527;
     border-radius: 0px 0px 24px 24px;
+  }
+
+  .swiper-proj-wrapper {
     justify-items: center;
   }
 
@@ -232,11 +236,11 @@ body {
 
   .swiper-proj {
     max-width: 704px;
+    background-color: #242527;
+    border-radius: 0px 0px 24px 24px;
   }
 
   .swiper-proj-wrapper {
-    background-color: #242527;
-    border-radius: 0px 0px 24px 24px;
     justify-items: center;
   }
 
@@ -323,9 +327,6 @@ body {
 
   .swiper-proj {
     max-width: 688px;
-  }
-
-  .swiper-proj-wrapper {
     border-radius: 0px 24px 24px 0px;
   }
 
