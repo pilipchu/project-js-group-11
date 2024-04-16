@@ -144,10 +144,10 @@ html {
     margin: 82px 0;
   }
 
-  .container {
+  /* .container {     
     display: flex;
     justify-content: space-between;
-  }
+  } */
 
   .benefits-property {
     display: flex;
