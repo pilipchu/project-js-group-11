@@ -8,6 +8,10 @@ body {
   background-color: #1c1d20;
 } */
 
+section {
+  background-color: red;
+}
+
 /* ===================== MOBILE ===================================*/
 @media screen and (max-width: 767px) {
   .projects-section {
@@ -86,7 +90,7 @@ body {
     background-color: #e0373f;
   }
 
-  .swiper-slide {
+  .visual-swiper-content {
     background-color: #242527;
     border-radius: 0px 0px 24px 24px;
     padding: 100px 0;
@@ -219,7 +223,7 @@ body {
     background-color: #e0373f;
   }
 
-  .swiper-slide {
+  .visual-swiper-content {
     background-color: #242527;
     border-radius: 0px 0px 24px 24px;
     padding: 120px 0;
@@ -291,7 +295,7 @@ body {
     border-radius: 24px 0px 0px 24px;
   }
 
-  .swiper-slide {
+  .visual-swiper-content {
     border-radius: 0px 24px 24px 0px;
     padding: 120px 0;
   }
