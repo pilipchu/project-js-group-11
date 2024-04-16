@@ -1,4 +1,5 @@
 <section class="about-me-sec">
+  <h2 class="hidden">About me</h2>
   <ul class="about-me-hero">
     <li class="about-me-hero-item">
       <p class="a-m-hero-text">
@@ -106,18 +107,18 @@
       </h3>
       <ul id="list-item-about-me" class="ac-panel">
         <li>
-          <p id="text-about-me" class="ac-text">
+          <p id="text-about-me" class="ac-text education-a-m">
             2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
           </p>
         </li>
         <li>
-          <p id="text-about-me" class="ac-text">
+          <p id="text-about-me" class="ac-text education-a-m">
             2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
             New York
           </p>
         </li>
         <li>
-          <p id="text-about-me" class="ac-text">
+          <p id="text-about-me" class="ac-text education-a-m">
             2020 - 2022 / Advanced Blender Animation Techniques, Udemy
           </p>
         </li>
@@ -127,13 +128,28 @@
 
   <div id="carousel-about-me-list" class="swiper">
     <ul class="swiper-wrapper">
-      <li class="carousel-about-me-item swiper-slide"><p>HTML/CSS</p></li>
-      <li class="carousel-about-me-item swiper-slide"><p>JavaScript</p></li>
-      <li class="carousel-about-me-item swiper-slide"><p>React</p></li>
-      <li class="carousel-about-me-item swiper-slide"><p>Node.js</p></li>
-      <li class="carousel-about-me-item swiper-slide"><p>React Native</p></li>
-      <li class="carousel-about-me-item swiper-slide"><p>Soft Skills</p></li>
+      <li class="swiper-slide">
+        <p class="carousel-about-me-item">HTML/CSS</p>
+      </li>
+      <li class="swiper-slide">
+        <p class="carousel-about-me-item">JavaScript</p>
+      </li>
+      <li class="swiper-slide"><p class="carousel-about-me-item">React</p></li>
+      <li class="swiper-slide">
+        <p class="carousel-about-me-item">Node.js</p>
+      </li>
+      <li class="swiper-slide">
+        <p class="carousel-about-me-item">React Native</p>
+      </li>
+      <li class="swiper-slide">
+        <p class="carousel-about-me-item">Soft Skills</p>
+      </li>
     </ul>
-    <div class="swiper-button-next"></div>
+    <div class="swiper-button-next">
+      <svg class="right-arrow-icon-about-me" aria-label="icon to swipe right">
+        <use href="../img/sprite.svg.svg#icon-arrow-right"></use>
+      </svg>
+    </div>
+    <!-- <div class="swiper-button-prev"></div> -->
   </div>
 </section>

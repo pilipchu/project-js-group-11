@@ -1,20 +1,20 @@
 // запит на сервер щоб отримати review
 
-import axios from "axios";
-import Swiper from "swiper";
+import axios from 'axios';
+import Swiper from 'swiper';
 
 export async function getReviews() {
-  const URL = "https://portfolio-js.b.goit.study/api/reviews";
+  const URL = 'https://portfolio-js.b.goit.study/api/reviews';
 
-    const RESPONSE = await axios.get (URL);
+  const RESPONSE = await axios.get(URL);
 
-    if (RESPONSE.status !== 200) {
-      throw new Error('Network response was not ok');
-    }
+  if (RESPONSE.status !== 200) {
+    throw new Error('Network response was not ok');
+  }
 
-    const DATA = RESPONSE.data;
+  const DATA = RESPONSE.data;
 
-    return DATA;
+  return DATA;
 }
 
 //getReviews()
@@ -23,17 +23,16 @@ export async function getReviews() {
 // тут метод POST
 
 export async function postReview(email, comment) {
-  const POST_URL = "https://portfolio-js.b.goit.study/api/requests";
+  const POST_URL = 'https://portfolio-js.b.goit.study/api/requests';
 
-    const POST_RESPONSE = await axios.post(POST_URL, {
-      email: email,
-      comment: comment
-    });
+  const POST_RESPONSE = await axios.post(POST_URL, {
+    email: email,
+    comment: comment,
+  });
 
-    const RESPONSE_DATA = POST_RESPONSE.data;
-    // console.log(RESPONSE_DATA); // теж розкоментуйте якщо треба глянути, що приходить
-    return RESPONSE_DATA;
-
+  const RESPONSE_DATA = POST_RESPONSE.data;
+  // console.log(RESPONSE_DATA); // теж розкоментуйте якщо треба глянути, що приходить
+  return RESPONSE_DATA;
 }
 
 // накидаю приклад для перевірки роботи, бо в мене все норм. Якщо треба буде зробити перевірку - розкоментуйте два консти нижче)
@@ -45,10 +44,8 @@ export async function postReview(email, comment) {
 //     console.error(error);
 //   });
 
-
 // ===================================================
 // SWIPER
-
 
 export function initSwiper(containerId, direction, loop = false) {
   return new Swiper(containerId, {
@@ -62,7 +59,6 @@ export function initSwiper(containerId, direction, loop = false) {
     keyboard: true,
   });
 }
-
 
 // інструкція:
 // спочатку імпортуємо ф-цію в свій файл
@@ -83,31 +79,28 @@ export function initSwiper(containerId, direction, loop = false) {
 // якось так має працювати.. з божою допомогою))))
 // =================================
 
-
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 export function createAccordion(defaultOpenIndex = 0) {
-
   //  я шукаю контейнер акордиону по класу! Гляньте щоб у вас клас основний був .accordion-container,
   //  а вже для індивідуальних стилів можете накинути ще один свій
-  const CONTAINER = document.querySelector(".accordion-container");
+  const CONTAINER = document.querySelector('.accordion-container');
 
-//  на всякий випадок
+  //  на всякий випадок
   if (!CONTAINER) {
-    console.error("Container not found");
+    console.error('Container not found');
     return;
   }
 
-const ITEMS = CONTAINER.querySelectorAll("li");
-new Accordion(CONTAINER, {});
+  const ITEMS = CONTAINER.querySelectorAll('li');
+  new Accordion(CONTAINER, {});
 
   ITEMS.forEach((item, index) => {
     if (index === defaultOpenIndex) {
-      item.classList.add("active");
+      item.classList.add('active');
     }
   });
-
 }
 
 //  тепер треба зробити імпорт тепер треба зробити імпорт до себе і викликати функцію
@@ -120,7 +113,3 @@ new Accordion(CONTAINER, {});
 // createAccordion(0);
 // або
 // createAccordion();
-
-
-
-

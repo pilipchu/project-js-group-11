@@ -1,3 +1,16 @@
+.hidden{
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+    
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
 .about-me-sec{
     padding: 32px 16px;
     background-color: #1C1D20;
@@ -31,6 +44,7 @@
     height: 100%;
     overflow: hidden;
     border-radius: 24px;
+    
 }
 .a-m-hero-text{
     font-family: "Inter Tight";
@@ -38,6 +52,7 @@
     line-height: 1.16;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .paint-func{
@@ -124,7 +139,7 @@
 #text-about-me{
     padding-left: 0;
     color: #fff;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 20px;
 }
@@ -134,21 +149,47 @@
 /* ----------- Swiper -------------- */
 .carousel-about-me-list{
     width: 100%;
+    
 }
-.carousel-about-me-item{
+.swiper-slide{
+background-color: transparent;
+padding: 0;
+margin: 0;
+}
+.swiper-slide.swiper-slide-active .carousel-about-me-item{
+    background-color: #ED3B44;
+}
+
+.swiper-slide .carousel-about-me-item{
     width: 130px;
     height: 130px;
     border: rgba(250, 250, 250, 0.20) solid 1px;
-    border-radius: 50% ;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
+}
+#carousel-about-me-list.swiper.swiper-initialized.swiper-horizontal.swiper-android.swiper-backface-hidden{
+width: 100%;
 }
 
-.swiper-button-next{
-    padding: 20px;
-    background-color: #8a8a8a;
+.content-swiper{
+    width: calc(100% - 55px - 28px);
 }
+#carousel-about-me-list.swiper.swiper-initialized.swiper-horizontal.swiper-android.swiper-backface-hidden .swiper-button-next{
+   
+}
+
+.swiper-button-next::after{
+    display: none;
+}
+
+.right-arrow-icon-about-me{
+width: 28px;
+height: 28px;
+}
+
 
 
 /* ----------- Swiper -------------- */
@@ -173,7 +214,8 @@
         padding: 32px ;
     }
     /* ----------- Swiper -------------- */
-    .carousel-about-me-item {
+.swiper-slide .carousel-about-me-item {
+    font-size: 20px;
         width: 200px;
         height: 200px;
     }
@@ -204,9 +246,18 @@
     .about-me-sec {
             padding: 48px 32px;
         }
-    #list-item-about-me{
+
+    .ac-panel{
         padding-left: 50%;
     }
+    .ac-text{
+        width: 612px;
+    }
+
+        .education-a-m{
+            width: 465px;
+        }
+
     .ac.is-active .ac-panel {
         padding-bottom: 30px;
     }

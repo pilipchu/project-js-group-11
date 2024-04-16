@@ -1,27 +1,39 @@
-<header class="header">
-  <div class="header-section container">
-    <div class="logo">
+<header class="header-sec">
+  <div class="header-div container">
+    <div class="logo-div-header">
       <img
-        class="logo-man"
+        class="logo-man-head"
         src="./img/hero/logo-man.png"
+        srcset="./img/hero/logo-man.png 1x, ./img/hero/logo-man@2x.png"
         alt=""
         width="80"
         height="80"
       />
-      <svg class="jeff" width="84" height="19">
+      <svg class="jeff-head" width="84" height="19">
         <use href="./img/sprite.svg.svg#icon-jefferson"></use>
       </svg>
     </div>
-    <nav id="nav">
-      <ul>
-        <li><a href="#about-me">About me</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#FAQ">FAQ</a></li>
+    <nav>
+      <span id="menu-button">Menu</span>
+      <ul id="menu-list" class="menu-hed-list">
+        <li>
+          <a class="menu-hed-item" href="#list-item-about-me">About me</a>
+        </li>
+        <li><a class="menu-hed-item" href="#benefits">Benefits</a></li>
+        <li><a class="menu-hed-item" href="#projects">Projects</a></li>
+        <li><a class="menu-hed-item" href="#faq">FAQ</a></li>
       </ul>
     </nav>
-    <div class="fake-btn">
-      <a class="fake-btn-text" href="">Order the project</a>
-    </div>
+    <a class="fake-btn-head" href="#work-together-section">Order the project</a>
+    <button class="burger__button js-open-menu">
+      <svg
+        class="header-menu-btn"
+        aria-label="antenna"
+        width="28px"
+        height="28px"
+      >
+        <use href="../img/sprite.svg.svg#icon-mob-menu"></use>
+      </svg>
+    </button>
   </div>
 </header>

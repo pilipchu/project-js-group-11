@@ -78,14 +78,24 @@ body {
     margin-top: 32px;
   }
 
-  .visual-content {
+  .see-proj-btn:hover {
+    background-color: #e0373f;
+  }
+
+  .see-proj-btn:focus {
+    background-color: #e0373f;
+  }
+
+  .visual-swiper-content {
     background-color: #242527;
     border-radius: 0px 0px 24px 24px;
-    padding: 100px 16px;
+    padding: 100px 0;
+    justify-items: center;
   }
 
   .proj-screenshot {
     width: 311px;
+    margin: 0 auto;
   }
 
   .swiper-control-wrapper {
@@ -98,18 +108,37 @@ body {
 
   .swipe-back-btn {
     border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #fafafa;
+    background-color: transparent;
   }
 
   .swipe-forward-btn {
     border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #fafafa;
+    background-color: transparent;
   }
 
   .arrow-back-icon {
-    fill: #ed3b44;
+    stroke: #fafafa;
+    fill: transparent;
+    width: 24px;
+    height: 24px;
   }
 
   .arrow-forward-icon {
-    fill: #ed3b44;
+    stroke: #fafafa;
+    fill: transparent;
+    width: 24px;
+    height: 24px;
+  }
+
+  .disabled-swipe {
+    stroke: #3b3b3b;
+    border-color: #3b3b3b;
   }
 }
 
@@ -156,7 +185,7 @@ body {
     padding: 18px;
     color: #1c1d20;
     letter-spacing: -0.02em;
-    font-size: 16px;
+    font-size: 15.5px;
     font-weight: 500;
   }
 
@@ -182,14 +211,24 @@ body {
     margin-top: 32px;
   }
 
-  .visual-content {
+  .see-proj-btn:hover {
+    background-color: #e0373f;
+  }
+
+  .see-proj-btn:focus {
+    background-color: #e0373f;
+  }
+
+  .visual-swiper-content {
     background-color: #242527;
     border-radius: 0px 0px 24px 24px;
-    padding: 120px 45px;
+    padding: 120px 0;
+    justify-items: center;
   }
 
   .proj-screenshot {
     width: 614px;
+    margin: 0 auto;
   }
 
   .swiper-control-wrapper {
@@ -202,18 +241,37 @@ body {
 
   .swipe-back-btn {
     border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    border: 1px solid #fafafa;
+    background-color: transparent;
   }
 
   .swipe-forward-btn {
     border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    border: 1px solid #fafafa;
+    background-color: transparent;
   }
 
   .arrow-back-icon {
-    fill: #ed3b44;
+    stroke: #fafafa;
+    fill: transparent;
+    width: 32px;
+    height: 32px;
   }
 
   .arrow-forward-icon {
-    fill: #ed3b44;
+    stroke: #fafafa;
+    fill: transparent;
+    width: 32px;
+    height: 32px;
+  }
+
+  .disabled-swipe {
+    stroke: #3b3b3b;
+    border-color: #3b3b3b;
   }
 }
 
@@ -226,14 +284,15 @@ body {
   .presentation-wrapper {
     display: flex;
     flex-direction: row;
+    border-radius: 24px;
   }
 
   .proj-description {
     border-radius: 24px 0px 0px 24px;
   }
 
-  .visual-content {
+  .visual-swiper-content {
     border-radius: 0px 24px 24px 0px;
-    padding: 120px 45px;
+    padding: 120px 0;
   }
 }

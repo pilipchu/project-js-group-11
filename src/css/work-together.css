@@ -1,17 +1,19 @@
 /*================== MOBILE WORK TOGETHER STYLES ============= */
 .work-together-section {
     padding-top: 32px;
-    padding-bottom: 32px;
+    background-image: url(./img/work-together/Background-mob.png)
 }
 
 .work-together-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
     position: relative;
 }
 
 .work-together-foto {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 32px;
+    left: 16px;
     width: 44px;
     height: 44px;
 }
@@ -21,7 +23,7 @@
     font-size: 40px;
     font-weight: 500;
     line-height: 1;
-    letter-spacing: -0,03em;
+    letter-spacing: -0.03em;
     margin-bottom: 63px;
     text-indent: 52px;
 }
@@ -31,10 +33,10 @@
     font-size: 40px;
     font-weight: 500;
     line-height: 1;
-    letter-spacing: -0, 03em;
+    letter-spacing: -0.03em;
 }
 
-.work-together-form input{
+.work-together-input-text{
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -47,33 +49,32 @@
     background-color: transparent;
     outline: none;
     padding: 0 0 20px 0;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-together-form input:focus {
+.work-together-input-text:focus {
     border-bottom: 1px solid rgba(250, 250, 250, 0.5);
     color: #FAFAFA;
 }
 
-#work-together-input-email {
-    margin-bottom: 16px;
+#work-together-input-text {
+    margin-top: 16px;
 }
-
-/* !НЕ ПРАЦЮЄ */
-/* #work-together-input-text {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-} */
-
 
 .success {
     border-bottom: 1px solid rgb(60, 188, 129);
-    background-color: transparent;
+}
+
+.work-together-input-text.success:focus {
+    border-bottom: 1px solid rgb(60, 188, 129);
 }
 
 .remove {
     border-bottom: 1px solid rgb(231, 74, 59);
-    background-color: transparent;
+}
+
+.work-together-input-text.remove:focus {
+    border-bottom: 1px solid rgb(231, 74, 59);
 }
 
 #success-message {
@@ -81,7 +82,6 @@
     line-height: 1.28571;
     letter-spacing: -0.02em;  
     color: #3cbc81;
-    /* margin-top: 4px; */
 }
 
 #invalid-message {
@@ -89,7 +89,6 @@
     line-height: 18px;
     letter-spacing: -2%;
     color: #e74a3b;
-    /* margin-top: 4px; */
 }
 
 #work-together-input-text {
@@ -109,6 +108,7 @@
     letter-spacing: -0.02em;
     color: #fafafa;
     margin-bottom: 64px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-together-btn:hover {
@@ -132,6 +132,7 @@
     color: #fafafa;
     padding: 10px 12px;
     font-style: normal;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-together-contacts-mail-link:hover,
@@ -144,7 +145,12 @@
 /*============== TABLET WORK TOGETHER STYLES ================= */
 @media screen and (min-width: 768px) {
 .work-together-section {
-    padding-top: 80px;
+    padding-top: 82px;
+    background-image: url(./img/work-together/Background-tab.png);
+}
+
+.work-together-container {
+    padding-top: 88px;
     padding-bottom: 169px;
 }
 
@@ -159,6 +165,8 @@
 }
 
 .work-together-foto {
+    top: 88px;
+    left: 32px;
     width: 70px;
     height: 70px;
 }
@@ -169,12 +177,11 @@
     margin-bottom: 18px;
 }
 
-.work-together-form input {
+.work-together-input-text {
     width: 245px;       
 }
 
 #work-together-input-email {
-    margin-bottom: 0;
     margin-top: 46px;
 }
 
@@ -208,9 +215,20 @@
 /*============== DESKTOP WORK TOGETHER STYLES ================= */
 @media screen and (min-width: 1440px) {
 .work-together-container {
-    max-width: 1048px;
-    margin-left: auto;
-    margin-right: auto;
+    /* max-width: 1048px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding-left: 196px;
+    padding-right: 196px;
+}
+
+.work-together-section {
+    background-image: url(./img/work-together/Background-desc.png);
+}
+
+.work-together-foto {
+    top: 88px;
+    left: 196px;
 }
 
 .work-together-form-group {
@@ -225,7 +243,7 @@
     margin-bottom: 18px;
 }
 
-.work-together-form input {
+.work-together-input-text {
     width: 390px;
 }
 }
@@ -236,22 +254,18 @@
 /*================== MOBILE WORK TOGETHER MODAL WINDOW STYLES ============= */
 .work-together-popup {
     position: fixed;
-    z-index: 9999999999;
-    top: 0;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-image: url(./img/work-together/Background-mob.png);
+    z-index: 9999999999;    
+    background-color: rgba(15, 15, 16, 0.60); 
+    display: grid;
+    align-items: center;
+    justify-content: center;
     visibility: hidden;
     opacity: 0;
-    transition: opacity .4s, visibility .4s;
-}
-
-@media (min-resolution: 192dpi) {
-    .work-together-popup {
-        background-image: url(./img/work-together/Background-mob@2x.png);
-    }
+    transition: opacity .4s, visibility .4s;     
 }
 
 .work-together-popup.open {
@@ -260,21 +274,18 @@
 }
     
 .work-together-modal-window {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    max-width: 343px;
+    padding: 64px 32px;
+    z-index: 1;
+    background: #1c1d20;
     border: 1px solid rgba(250, 250, 250, 0.1);
     border-radius: 20px;
-    padding: 60px 32px;
-    width: 343px;
-    height: 276px;
-    background: #1c1d20;
     transform: scale(0);
     transition: transform .8s;
 }
 
-.work-together-popup.open .work-together-popup {
+.work-together-popup.open .work-together-modal-window {
     transform: scale(1);
 }
 
@@ -299,6 +310,7 @@
 }
 
 .work-together-modal-close-btn {
+    cursor: pointer;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -309,3 +321,13 @@
 }
 
 /*================== /MOBILE WORK TOGETHER MODAL WINDOW STYLES ============= */
+
+/*================== TABLET WORK TOGETHER MODAL WINDOW STYLES ============= */
+@media screen and (min-width: 768px) {
+.work-together-modal-window {
+    max-width: 492px;
+    padding: 64px
+}       
+}
+/*================== /TABLET WORK TOGETHER MODAL WINDOW STYLES ============= */
+

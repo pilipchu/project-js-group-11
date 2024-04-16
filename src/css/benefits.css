@@ -133,11 +133,17 @@
     padding: 82px 0;
   }
 
+
+  /* .container {     
   .benefits-container {
     display: flex;
     justify-content: space-between;
+
     padding: 0 32px;
   }
+
+  } */
+
 
   .benefits-property {
     display: flex;
