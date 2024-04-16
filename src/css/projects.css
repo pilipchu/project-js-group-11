@@ -8,10 +8,6 @@ body {
   background-color: #1c1d20;
 } */
 
-section {
-  background-color: red;
-}
-
 /* ===================== MOBILE ===================================*/
 @media screen and (max-width: 767px) {
   .projects-section {
