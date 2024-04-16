@@ -64,26 +64,3 @@ function initializeSwiper(containerId) {
   });
 }
 
-const swipeForwardIcon = document.querySelector(".arr-icon")
-const swipeBackIcon = document.querySelector(".arr-prev-icon")
-
-swiper.on('reachEnd', function () {
-  swipeForwardIcon.classList.toggle("reviews-disabled-swipe")
-  swipeForwardBtn.classList.toggle("reviews-disabled-swipe")
-})
-
-swiper.on('reachBeginning', function () {
-  swipeBackIcon.classList.toggle("reviews-disabled-swipe")
-  swipeBackBtn.classList.toggle("reviews-disabled-swipe")
-})
-
-swiper.on('fromEdge', function () {
-  swipeBackIcon.classList.remove("reviews-disabled-swipe")
-  swipeBackBtn.classList.remove("reviews-disabled-swipe")
-  swipeForwardIcon.classList.remove("reviews-disabled-swipe")
-  swipeForwardBtn.classList.remove("reviews-disabled-swipe")
-})
-
-
-const nextBtn = document.querySelector(".reviews-btn-next");
-nextBtn.addEventListener("click", () => swiper.slideNext());
