@@ -4,7 +4,7 @@ import iziToast from "izitoast";
 
 import "izitoast/dist/css/iziToast.min.css";
 import 'swiper/css';
-import { Navigation, Keyboard,Mousewheel } from 'swiper/modules';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import { getReviews } from './api';
 
 document.addEventListener('DOMContentLoaded', renderReviews);
@@ -12,10 +12,9 @@ document.addEventListener('DOMContentLoaded', renderReviews);
 async function renderReviews() {
   try {
     const reviews = await getReviews();
-
     render(reviews);
   } catch (error) {
-
+    console.error('Error fetching reviews:', error);
   }
 }
 
@@ -50,7 +49,7 @@ function initializeSwiper(containerId) {
     },
     keyboard: { enabled: true, onlyInViewport: true },
     mousewheel: { enabled: true },
-    speed: 800,
+    speed: 400,
     spaceBetween: 16,
     allowTouchMove: true,
     loop: false,
@@ -61,4 +60,24 @@ function initializeSwiper(containerId) {
       prevEl: '.reviews-btn-prev'
     }
   });
+
+  swiperReviews.on('reachEnd', function () {
+    document.querySelector(".icon-arr").classList.add("reviews-disabled-swipe");
+    document.querySelector(".reviews-btn-next").classList.add("reviews-disabled-swipe");
+  });
+
+  swiperReviews.on('reachBeginning', function () {
+    document.querySelector(".icon-prev-arr").classList.add("reviews-disabled-swipe");
+    document.querySelector(".reviews-btn-prev").classList.add("reviews-disabled-swipe");
+  });
+
+  swiperReviews.on('fromEdge', function () {
+    document.querySelector(".icon-prev-arr").classList.remove("reviews-disabled-swipe");
+    document.querySelector(".reviews-btn-prev").classList.remove("reviews-disabled-swipe");
+    document.querySelector(".icon-arr").classList.remove("reviews-disabled-swipe");
+    document.querySelector(".reviews-btn-next").classList.remove("reviews-disabled-swipe");
+  });
+
+  const nextBtn = document.querySelector(".reviews-btn-next");
+  nextBtn.addEventListener("click", () => swiperReviews.slideNext());
 }
