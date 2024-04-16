@@ -6,32 +6,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
   menuButton.addEventListener('click', function() {
     if (!isOpen) {
- 
-      menuList.style.display = 'flex';
-      const links = menuList.querySelectorAll('li');
+      menuList.classList.remove('menu-list-hidden');
+      menuList.classList.add('menu-list-visible');
+
+      const links = menuList.querySelectorAll('a');
       links.forEach((link, index) => {
-        setTimeout(() => {
-          link.style.transition = 'opacity 0.3s, transform 0.3s';
-          link.style.opacity = '1';
-          link.style.transform = 'translateY(0)';
-        }, index * 250);
-      });
-      isOpen = true;
-    } else {
-    
-      const links = menuList.querySelectorAll('li');
-      links.forEach((link, index) => {
-        link.style.transition = `opacity 0.3s ${(links.length - index - 1) * 250}ms, transform 0.3s ${(links.length - index - 1) * 250}ms`;
-        link.style.opacity = '0';
-        link.style.transform = 'translateY(-100%)';
+        link.classList.remove('menu-link-hidden');
+        link.classList.add('menu-link-visible');
+        link.style.transition = `opacity 0.4s ${(index) * 250}ms, transform 0.4s ${(index) * 250}ms`;
       });
       setTimeout(() => {
-        menuList.style.display = 'none';
+        menuList.classList.remove('menu-list-hidden');
+        menuList.classList.add('menu-list-visible');
+      }, links.length * 250);
+      isOpen = true;
+      
+    } else {
+      const links = menuList.querySelectorAll('a');
+      links.forEach((link, index) => {
+        link.classList.remove('menu-link-visible');
+        link.classList.add('menu-link-hidden');
+        link.style.transition = `opacity 0.3s ${(links.length - index - 1) * 250}ms, transform 0.3s ${(links.length - index - 1) * 250}ms`;
+      });
+      setTimeout(() => {
+        menuList.classList.remove('menu-list-visible');
+        menuList.classList.add('menu-list-hidden');
+
       }, links.length * 250);
       isOpen = false;
     }
   });
 });
-
-
-
