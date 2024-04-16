@@ -7,35 +7,51 @@ const popup = document.getElementById('work-together-popup');
 const closeModalButton = document.querySelector(
   '.work-together-modal-close-btn'
 );
+const sendButton = document.querySelector('.work-together-btn');
 
 import axios from 'axios';
 import { postReview } from '../js/api.js';
 
-//  ======================= Відправка форми
+//  ======================= Відстежування input
 
-form.addEventListener('submit', function (e) {
+// form.addEventListener('input', function (e) {
+//   const email = emailInput.value;
+//   const comment = commentInput.value;
+//   if (!validateEmail(email)) {
+//     showInvalidEmailMessage();
+//     emailInput.focus();
+//   } else {
+//     showSuccessMessage();
+//   }
+// });
+
+//  ======================= Відправка форми
+sendButton.addEventListener('click', function (e) {
   e.preventDefault();
 
   const email = emailInput.value;
   const comment = commentInput.value;
 
+  if (!email || !comment) {
+    alert('Please fill in all fields.');
+    return;
+  }
+
   if (!validateEmail(email)) {
     showInvalidEmailMessage();
-    console.log(hi);
     emailInput.focus();
+    return;
   }
   sendRequest(email, comment);
 });
 
 //  ==================== Перевірка пошти, повертає true або false
-
 function validateEmail(email) {
   const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
   return emailPattern.test(email);
 }
 
 //  ==================== Post запит
-
 async function sendRequest(email, comment) {
   try {
     const response = await postReview(email, comment);
@@ -53,7 +69,6 @@ async function sendRequest(email, comment) {
 }
 
 // ==================== Закриття модального вікна
-
 closeModalButton.addEventListener('click', function () {
   closePopup();
 });
