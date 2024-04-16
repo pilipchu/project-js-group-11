@@ -1,3 +1,9 @@
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
+import axios from 'axios';
+import { postReview } from '../js/api.js';
+
 const form = document.getElementById('work-together-form');
 const emailInput = document.getElementById('work-together-input-email');
 const commentInput = document.getElementById('work-together-input-text');
@@ -8,9 +14,6 @@ const closeModalButton = document.querySelector(
   '.work-together-modal-close-btn'
 );
 const sendButton = document.querySelector('.work-together-btn');
-
-import axios from 'axios';
-import { postReview } from '../js/api.js';
 
 //  ======================= Відстежування input
 
@@ -33,7 +36,11 @@ sendButton.addEventListener('click', function (e) {
   const comment = commentInput.value;
 
   if (!email || !comment) {
-    alert('Please fill in all fields.');
+    iziToast.error({
+      message: 'Please fill in all fields',
+      position: 'topRight',
+    });
+    // alert('Please fill in all fields');
     return;
   }
 
@@ -61,7 +68,11 @@ async function sendRequest(email, comment) {
       emailInput.value = '';
       commentInput.value = '';
     } else {
-      alert('There was an error. Please try again later.');
+      iziToast.error({
+        message: 'There was an error. Please try again later',
+        position: 'topRight',
+      });
+      // alert('There was an error. Please try again later.');
     }
   } catch (error) {
     console.error('Error:', error);
