@@ -19,10 +19,6 @@ body {
     padding-bottom: 32px;
   }
 
-  .proj-title-wrapper {
-    max-width: 279px;
-  }
-
   .proj-title {
     font-weight: 600;
     font-size: 16px;
@@ -174,10 +170,6 @@ body {
     padding-bottom: 48px;
   }
 
-  .proj-title-wrapper {
-    max-width: 494px;
-  }
-
   .proj-title {
     font-weight: 600;
     font-size: 16px;
@@ -222,8 +214,8 @@ body {
     font-size: 44px;
     line-height: 100%;
     letter-spacing: -0.03em;
-
     margin: 164px 0 0 0;
+    width: 494px;
   }
 
   .see-proj-btn {
