@@ -3,7 +3,7 @@
 }
 
 .main-title {
-  width: 284 px;
+  width: 284px;
   color: rgba(250, 250, 250, 0.4);
   font-family: 'Inter Tight';
   font-size: 16px;
@@ -95,7 +95,7 @@
 /* ============== TABLET BENEFITS STYLES ====================== */
 @media screen and (min-width: 768px) {
   .benefits {
-    padding: 48px auto;
+    padding: 48px 0;
   }
   .our-benefits {
     flex-direction: row;
