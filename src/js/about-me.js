@@ -2,9 +2,10 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-import Swiper from 'swiper';
-import { Keyboard, Mousewheel, Navigation } from 'swiper/modules';
-import 'swiper/css';
+import Swiper from 'swiper'
+import 'swiper/css'
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules'
+
 // ---------Accordion-------
 
 const according = document.querySelector('.list-about-me');
@@ -14,68 +15,26 @@ new Accordion(according, {
     openOnInit: [0], 
 });
 
-const buttons = accContainer.querySelectorAll('.ac-trigger');
-[...buttons].map((button, idx) => {
-    button.addEventListener('click', () => accordion.close(idx));
-});
 
 // ---------Accordion-------
 // ---------Swiper---------
+const swiperAboutMeContainer = document.querySelector('#carousel-about-me-list');
+const buttonNextAM = document.querySelector('.btn-next-a-m');
 
+buttonNextAM.addEventListener("click", () => swiperAboutMe.slideNext());
 
-
-// const swiperAboutMe = document.querySelector("#carousel-about-me-list");
-
-// const buttonEl = document.querySelector('.swiper-button-next');
-
-// const swiper = new Swiper(swiperAboutMe, {
-//   modules: [Navigation, Keyboard, Mousewheel],
-//   direction: 'horizontal',
-//   spaceBetween: 0,
-//   navigation: {
-//       nextEl: buttonEl,
-//       prevEl: '.swiper-button-prev',
-//   },
-//   slidesPerView: 2,
-//   initialSlide: 1,
-//   updateOnWindowResize: true,
-//     breakpoints: {
-//     375: {
-//         slidesPerView: 3,
-//     },
-//     767: {
-//       slidesPerView: 3,
-//     },
-//     1440: {
-//       slidesPerView: 5,
-//     },
-//   },
-//   mousewheel: {
-//     enabled: true,
-//     invert: true,
-//   },
-//   keyboard: {
-//     enabled: true,
-//     onlyInViewport: true,
-//   },
-//   loop: true,
-//   allowTouchMove: true,
-//   followFinger: true,
-//   simulateTouch: true,
-// });
-
-const swiperEl = document.querySelector('#carousel-about-me-list');
-const buttonEl = document.querySelector('.swiper-button-next');
-const swiperBySection = new Swiper(swiperEl, {
+const swiperAboutMe = new Swiper(swiperAboutMeContainer, {
   modules: [Navigation, Keyboard, Mousewheel],
   direction: 'horizontal',
   spaceBetween: 0,
   navigation: {
-    nextEl: buttonEl,
+      nextEl: buttonNextAM,
+    //   prevEl: '.swiper-button-prev',
   },
   slidesPerView: 2,
-  initialSlide: 1,
-  breakpoints: {
+    initialSlide: 1,
+  updateOnWindowResize: true,
+    breakpoints: {
     767: {
       slidesPerView: 3,
     },
@@ -96,5 +55,14 @@ const swiperBySection = new Swiper(swiperEl, {
   followFinger: true,
   simulateTouch: true,
 });
+
+
+
+
+
+
+
+
+
 
 
