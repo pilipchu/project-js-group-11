@@ -1,0 +1,107 @@
+<footer id="work-together-section" class="work-together-section">
+  <div class="work-together-container container">
+    <picture class="work-together-foto">
+      <source
+        srcset="
+          ./img/work-together/logo-man.png    1x,
+          ./img/work-together/logo-man@2x.png 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="
+          ./img/work-together/logo-man.png    1x,
+          ./img/work-together/logo-man@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./img/work-together/logo-man-mobile.png    1x,
+          ./img/work-together/logo-man-mobile@2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img src="./img/work-together/logo-man.png" alt="man" />
+    </picture>
+    <h2 class="work-together-title">
+      LET'S <span class="work-together-span">WORK</span><br />
+      TOGETHER
+    </h2>
+
+    <form id="work-together-form" class="work-together-form">
+      <div class="work-together-form-group">
+        <input
+          id="work-together-input-email"
+          class="work-together-input-text"
+          name="user-email"
+          type="email"
+          placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        />
+        <div
+          class="work-together-text"
+          id="success-message"
+          style="display: none"
+        >
+          Success!
+        </div>
+        <div
+          class="work-together-text"
+          id="invalid-message"
+          style="display: none"
+        >
+          Invalid email, try again!
+        </div>
+      </div>
+      <div class="work-together-form-group">
+        <input
+          id="work-together-input-text"
+          class="work-together-input-text"
+          name="user-comments"
+          type="text"
+          placeholder="comments"
+        />
+      </div>
+      <button class="work-together-btn" type="submit">Send</button>
+    </form>
+    <address class="work-together-contacts">
+      <ul class="work-together-contacts-list">
+        <li class="work-together-contacts-items">
+          <a
+            class="work-together-contacts-mail-link"
+            href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="work-together-contacts-items">
+          <a class="work-together-contacts-phone-link" href="tel:+3801111111111"
+            >+380 11 1111 11 11</a
+          >
+        </li>
+      </ul>
+    </address>
+  </div>
+</footer>
+<!-- WORK-TOGETHER-POPUP -->
+<div id="work-together-popup" class="work-together-popup">
+  <div class="work-together-modal-window">
+    <button class="work-together-modal-close-btn" type="button">
+      <svg
+        class="work-together-modal-close-btn-icon"
+        width="22"
+        height="22"
+        aria-label="close modal icon"
+      >
+        <use href="./img/sprite.svg.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+    <h2 class="work-together-modal-window-title">
+      Thank you for your interest in cooperation!
+    </h2>
+    <p class="work-together-modal-window-desc">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
+</div>
