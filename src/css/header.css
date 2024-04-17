@@ -18,6 +18,10 @@
   opacity: 0;
   transform: translateY(-100%);
 }
+
+.header-nav{
+  display: none;
+}
 /* ========== MOBILE ========= */
 .header-sec {
   position: absolute;
@@ -62,6 +66,9 @@
       padding: 0 32px;
     }
 
+    .header-nav{
+      display: block;
+    }
   /* #menu-list {
      display: none;
   } */

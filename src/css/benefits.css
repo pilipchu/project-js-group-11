@@ -1,6 +1,14 @@
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+
+
 .benefits {
   padding: 32px 0;
 }
+
 
 .main-title {
   width: 284 px;
@@ -98,6 +106,10 @@
   .benefits {
     padding: 48px auto;
   }
+
+  .benefits-container{
+    padding: 0 32px;
+  }
   .our-benefits {
     flex-direction: row;
     flex-wrap: wrap;
@@ -133,22 +145,18 @@
     padding: 82px 0;
   }
 
-
-  /* .container {     
+.our-benefits-list{
+  max-width: 704px;
+}
+      
   .benefits-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-
-    padding: 0 32px;
   }
 
-  } */
-
-
   .benefits-property {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 50%;
+    display: block;
   }
 
   .our-benefits-list {
@@ -156,5 +164,10 @@
     flex-wrap: wrap;
     gap: 16px;
   }
-}
+
+  } 
+
+
+  
+
 /* ============== /DESKTOP BENEFITS STYLES ====================== */
