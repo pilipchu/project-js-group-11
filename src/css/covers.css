@@ -15,35 +15,29 @@ body {
 /* 
 //MОБІЛЬНА ВЕРСІЯ */
 
-@media screen and (min-width: 320px) {
     
     .section_covers {
-        min-width: 320px;
         max-width: 375px;
-        max-height: 572px;
         margin: 0 auto;
         padding: 32px 0;
     }
 
     .conteiner_covers {
         margin: 0 auto;
-        height: 508px;
-        width: 100%;
         overflow: hidden;
         background-image: url(../img/covers/three-red-stains.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         z-index: -1;
+        
     }
 
     .content {
-        position: relative;
         height: 508px;
     }
     
     .marquee {
-        height: 508px;
         transform: translateY(-70px);
 
     }
@@ -59,11 +53,10 @@ body {
 
     .marquee__line {
         flex-shrink: 0;
-        margin: 12px;
+        padding: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: calc(100% / 10);
         white-space: nowrap;
         animation-duration: 5s;
         animation-timing-function: ease-in-out;
@@ -84,21 +77,18 @@ body {
         }
     }
     
-}
+
     
 /* ВЕРСІЯ ДЛЯ ПЛАНШЕТУ */
 @media screen and (min-width: 768px) and (max-width: 1439px) {
 
     .section_covers {
-        max-width: 100%;
-        max-height: 1056px;
+        max-width: 768px;
         margin: 0 auto;
         padding: 48px 0;
     }
     
     .conteiner_covers {
-        width: 768px;
-        height: 960px;
         background-image: url(../img/covers/three-red-stains.png);
         background-position: center;
         background-repeat: no-repeat;
@@ -106,24 +96,19 @@ body {
         overflow: hidden;
     }
 
-    .content {
-        position: relative;
-        width: 768px;
-        height: 960px;
-    }
-    
+
     .marquee {
-        width: 768px;
         height: 960px;
-        right: -500px;
-        left: 0;
         transform: translateY(-150px);
+    
     }
     
     .marquee__inner {
-        height: 42vh;
+        position: relative;
         display: flex;
         transform: rotate(15deg);
+        left: 100px;
+        padding: 2%;
     }
     .marquee__inner .five_row {
         display: none;
@@ -131,18 +116,14 @@ body {
     
     .marquee__line {
         flex-shrink: 0;
-        margin: 2%;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: calc(100% / 10);
         white-space: nowrap;
         animation-duration: 5s;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
         animation-name: marqueeLine;
-        width: 544px;
-        height: 314px;
     }
     
     @keyframes marqueeLine {
@@ -163,37 +144,26 @@ body {
 @media screen and (min-width: 1440px) {
 
     .section_covers {
-        min-width: 1440px;
-        max-height: 1124px;
+        max-width: 1440px;
         margin: 0 auto;
         padding: 82px 0;
     }
 
     .conteiner_covers {
-        width: 1440px;
-        height: 960px;
         background-image: url(../img/covers/three-red-stains.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
+        height: 960px;
     }
     
-    .content {
-        width: 1440px;
-        height: 960px;
-    }
 
     .marquee {
-        width: 1440px;
-        height: 960px;
         transform: translateY(-200px);
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .marquee__inner {
-        height: 39%;
         display: flex;
         transform: rotate(15deg);
     }
