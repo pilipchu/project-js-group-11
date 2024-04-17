@@ -1,4 +1,3 @@
-import './js/slider';
 import './js/footer';
 import './js/faq';
 import './js/review';
