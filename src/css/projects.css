@@ -69,13 +69,15 @@ body {
   }
 
   .see-proj-btn {
+    display: block;
+    width: 141px;
     border-radius: 60px;
     padding: 13px 32px;
     border: none;
     color: #fafafa;
     background-color: #ed3b44;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15.5px;
     letter-spacing: -0.02em;
     margin-top: 32px;
   }
@@ -219,13 +221,15 @@ body {
   }
 
   .see-proj-btn {
+    display: block;
+    width: 177px;
     border-radius: 60px;
     padding: 18px 50px;
     border: none;
     color: #fafafa;
     background-color: #ed3b44;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15.5px;
     letter-spacing: -0.02em;
     margin-top: 32px;
   }
@@ -339,7 +343,7 @@ body {
   }
 
   .swiper-proj-slide {
-    width: 614px;
+    max-width: 688px;
     margin: 0 auto;
   }
 }
