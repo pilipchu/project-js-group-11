@@ -31,6 +31,7 @@ body {
   .presentation-wrapper {
     border-radius: 24px;
     margin-top: 32px;
+    margin: 0 auto;
   }
 
   .proj-description {
@@ -68,13 +69,15 @@ body {
   }
 
   .see-proj-btn {
+    display: block;
+    width: 141px;
     border-radius: 60px;
     padding: 13px 32px;
     border: none;
     color: #fafafa;
     background-color: #ed3b44;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15.5px;
     letter-spacing: -0.02em;
     margin-top: 32px;
   }
@@ -123,6 +126,7 @@ body {
     border: 1px solid #fafafa;
     background-color: transparent;
     justify-items: center;
+    align-items: center;
   }
 
   .swipe-forward-btn {
@@ -132,6 +136,7 @@ body {
     border: 1px solid #fafafa;
     background-color: transparent;
     justify-items: center;
+    align-items: center;
   }
 
   .arrow-back-icon {
@@ -139,6 +144,7 @@ body {
     fill: transparent;
     width: 24px;
     height: 24px;
+    margin: 0;
   }
 
   .arrow-forward-icon {
@@ -146,6 +152,7 @@ body {
     fill: transparent;
     width: 24px;
     height: 24px;
+    margin: 0;
   }
 
   .disabled-swipe {
@@ -209,18 +216,20 @@ body {
     font-size: 44px;
     line-height: 100%;
     letter-spacing: -0.03em;
-
     margin: 164px 0 0 0;
+    width: 494px;
   }
 
   .see-proj-btn {
+    display: block;
+    width: 177px;
     border-radius: 60px;
     padding: 18px 50px;
     border: none;
     color: #fafafa;
     background-color: #ed3b44;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15.5px;
     letter-spacing: -0.02em;
     margin-top: 32px;
   }
@@ -269,6 +278,7 @@ body {
     border: 1px solid #fafafa;
     background-color: transparent;
     justify-items: center;
+    align-items: center;
   }
 
   .swipe-forward-btn {
@@ -278,6 +288,7 @@ body {
     border: 1px solid #fafafa;
     background-color: transparent;
     justify-items: center;
+    align-items: center;
   }
 
   .arrow-back-icon {
@@ -285,6 +296,7 @@ body {
     fill: transparent;
     width: 32px;
     height: 32px;
+    margin: 0;
   }
 
   .arrow-forward-icon {
@@ -292,6 +304,7 @@ body {
     fill: transparent;
     width: 32px;
     height: 32px;
+    margin: 0;
   }
 
   .disabled-swipe {
@@ -330,7 +343,7 @@ body {
   }
 
   .swiper-proj-slide {
-    width: 614px;
+    max-width: 688px;
     margin: 0 auto;
   }
 }
