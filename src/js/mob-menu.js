@@ -1,31 +1,31 @@
 
 (() => {
-  const mobileMenu = document.querySelector('.js-menu-container');
-  const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
-  const closeMenuLink = document.querySelectorAll('.header-link');
-  const orderBtn = document.querySelector('.js-order-btn');
+  const MOBILE_MENU = document.querySelector('.js-menu-container');
+  const OPEN_MENU_BTN = document.querySelector('.js-open-menu');
+  const CLOSE_MENU_BTN = document.querySelector('.js-close-menu');
+  const CLOSE_MENU_LINK = document.querySelectorAll('.header-link');
+  const ORDER_BTN = document.querySelector('.js-order-btn');
 
-  const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-        mobileMenu.classList.toggle('is-open');
-      const scrollLockMethod = !isMenuOpen
+  const TOGGLE_MENU = () => {
+    const IS_MENU_OPEN =
+      OPEN_MENU_BTN.getAttribute('aria-expanded') === 'true' || false;
+    OPEN_MENU_BTN.setAttribute('aria-expanded', !IS_MENU_OPEN);
+        MOBILE_MENU.classList.toggle('is-open');
+      const SCROLL_LOCK_METHOD = !IS_MENU_OPEN
       ? 'disableBodyScroll'
       : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
+    bodyScrollLock[SCROLL_LOCK_METHOD](document.body);
   };
-  closeMenuLink.forEach(item => item.addEventListener('click', toggleMenu));
-  openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtn.addEventListener('click', toggleMenu);
-  orderBtn.addEventListener('click', toggleMenu);
+  CLOSE_MENU_LINK.forEach(item => item.addEventListener('click', TOGGLE_MENU));
+  OPEN_MENU_BTN.addEventListener('click', TOGGLE_MENU);
+  CLOSE_MENU_BTN.addEventListener('click', TOGGLE_MENU);
+  ORDER_BTN.addEventListener('click', TOGGLE_MENU);
 
  
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
-    mobileMenu.classList.remove('is-open');
-    openMenuBtn.setAttribute('aria-expanded', false);
+    MOBILE_MENU.classList.remove('is-open');
+    OPEN_MENU_BTN.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
